@@ -429,7 +429,10 @@ KontagentApi.prototype._sendMessage = function(messageType, params, successCallb
 			result = KtValidator.validateParameter(messageType, paramKey, params[paramKey]);
 
 			if (result != true) {
-				validationErrorCallback(result);
+				if (validationErrorCallback) {
+					validationErrorCallback(result);
+				}
+
 				return;
 			}
 		}

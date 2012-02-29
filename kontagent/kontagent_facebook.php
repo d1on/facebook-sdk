@@ -91,7 +91,8 @@ class KontagentFacebook extends Facebook
 	public function getFeedDialogUrl($params = array())
 	{
 		$uniqueTrackingTag = $this->ktApi->genUniqueTrackingTag();
-	
+		
+		// define the URL to redirect the sender
 		$params['redirect_uri'] = $this->appendKtVarsToUrl(
 			(isset($params['redirect_uri'])) ? $params['redirect_uri'] : $this->getCurrentUrl(true),
 			array(
@@ -102,18 +103,19 @@ class KontagentFacebook extends Facebook
 				'kt_st3' => (isset($params['subtype3'])) ? $params['subtype3'] : null,
 			)
 		);
-	
-		// append tracking variables to link 
-		// TODO: append these variables to ALL possible links (properties, actions - see: http://developers.facebook.com/docs/reference/dialogs/feed/)
+		
+		// We replace the $params['link'] with Kontagent's redirect landing page
+		// which will track the PSR and then redirect them to the real landing url.
 		if (isset($params['link'])) {
 			$params['link'] = $this->appendKtVarsToUrl(
-				$params['link'],
+				KT_REDIRECT_URL,
 				array(
 					'kt_track_psr' => 1,
 					'kt_u' =>  $uniqueTrackingTag,
 					'kt_st1' => (isset($params['subtype1'])) ? $params['subtype1'] : null,
 					'kt_st2' => (isset($params['subtype2'])) ? $params['subtype2'] : null,
-					'kt_st3' => (isset($params['subtype3'])) ? $params['subtype3'] : null
+					'kt_st3' => (isset($params['subtype3'])) ? $params['subtype3'] : null,
+					'kt_redir_url' => $params['link']
 				)
 			);
 		}
@@ -122,13 +124,14 @@ class KontagentFacebook extends Facebook
 			for($i=0; $i<sizeof($params['actions']); $i++) {
 				if (isset($params['actions'][$i]['link'])) {
 					$params['actions'][$i]['link'] = $this->appendKtVarsToUrl(
-						$params['actions'][$i]['link'],
+						KT_REDIRECT_URL,
 						array(
 							'kt_track_psr' => 1,
 							'kt_u' =>  $uniqueTrackingTag,
 							'kt_st1' => (isset($params['subtype1'])) ? $params['subtype1'] : null,
 							'kt_st2' => (isset($params['subtype2'])) ? $params['subtype2'] : null,
-							'kt_st3' => (isset($params['subtype3'])) ? $params['subtype3'] : null
+							'kt_st3' => (isset($params['subtype3'])) ? $params['subtype3'] : null,
+							'kt_redir_url' => $params['actions'][$i]['link']
 						)
 					);
 				}
@@ -266,15 +269,18 @@ class KontagentFacebook extends Facebook
 		} else {
 			echo 'var KT_USE_TEST_SERVER = false;';
 		}
+        
+		echo "var KT_IS_INSTALLED_SESSION_SET = ";
+		echo ($this->isInstalledSessionSet()) ? "true;" : "false;";
 		
 		if (KT_SEND_CLIENT_SIDE) {
 			echo 'var KT_SEND_CLIENT_SIDE = true;';
 		} else {
-
-
 			echo 'var KT_SEND_CLIENT_SIDE = false;';
 		}
 
+		echo 'var KT_REDIRECT_URL = "' . KT_REDIRECT_URL . '";';
+        
 		if (KT_USE_HTTPS == 'auto') {
 			echo 'var KT_USE_HTTPS = "auto";';
 		} else if (KT_USE_HTTPS == true) {
@@ -324,8 +330,16 @@ class KontagentFacebook extends Facebook
 				// because this is where the code will look for it when application added is generated.
 				$_GET['kt_u'] = $ktDataVars['kt_u'];
 				
+                if (isset($request['to']['id'])) {
+                    $recipientUserId = $request['to']['id'];
+                } elseif ($this->getUser()) { 
+                    $recipientUserId = $this->getUser();
+                } else {
+                    $recipientUserId = null;
+                }
+                
 				$this->ktApi->trackInviteResponse($ktDataVars['kt_u'], array(
-					'recipientUserId' => $request['to']['id'],
+					'recipientUserId' => $recipientUserId,
 					'subtype1' => (isset($ktDataVars['kt_st1'])) ? $ktDataVars['kt_st1'] : null,
 					'subtype2' => (isset($ktDataVars['kt_st2'])) ? $ktDataVars['kt_st2'] : null,
 					'subtype3' => (isset($ktDataVars['kt_st3'])) ? $ktDataVars['kt_st3'] : null
@@ -344,41 +358,44 @@ class KontagentFacebook extends Facebook
 
 		if (!KT_SEND_CLIENT_SIDE) {
 			if ($this->getUser()) {
-				if (isset($_GET['kt_track_apa']) && !isset($_GET['error'])) {
+				//if (isset($_GET['kt_track_apa']) && !isset($_GET['error'])) {
 					// track the application added
-					$this->ktApi->trackApplicationAdded($this->getUser(), array(
-						'uniqueTrackingTag' => isset($_GET['kt_u']) ? $_GET['kt_u'] : null,
-						'shortUniqueTrackingTag' => isset($_GET['kt_su']) ? $_GET['kt_su'] : null,
-					));
-					
-					// track the user information
-					$gender = null;
-					$birthYear = null;
-					$friendCount = null;
-					
-					// attempt to retrieve user data from FB api
-					try {
-						$userInfo = $this->api('/me');
-						$userFriendsInfo = $this->api('/me/friends');
+					// Check if this user has already installed
+					if (!$this->isInstalledSessionSet()) {
+						$this->ktApi->trackApplicationAdded($this->getUser(), array(
+							'uniqueTrackingTag' => isset($_GET['kt_u']) ? $_GET['kt_u'] : null,
+							'shortUniqueTrackingTag' => isset($_GET['kt_su']) ? $_GET['kt_su'] : null,
+						));
+						// track the user information
+						$gender = null;
+						$birthYear = null;
+						$friendCount = null;
 						
-						$gender = substr($userInfo['gender'], 0, 1);
-						
-						if (isset($userInfo['birthday'])) {
-							$birthdayPieces = explode('/', $userInfo['birthday']);
+						// attempt to retrieve user data from FB api
+						try {
+							$userInfo = $this->api('/me');
+							$userFriendsInfo = $this->api('/me/friends');
 							
-							if (sizeof($birthdayPieces) == 3) {
-								$birthYear = $birthdayPieces[2];
+							$gender = substr($userInfo['gender'], 0, 1);
+							
+							if (isset($userInfo['birthday'])) {
+								$birthdayPieces = explode('/', $userInfo['birthday']);
+								
+								if (sizeof($birthdayPieces) == 3) {
+									$birthYear = $birthdayPieces[2];
+								}
 							}
-						}
+							
+							$friendCount = sizeof($userFriendsInfo['data']);
+						} catch (FacebookApiException $e) { }
+						$this->ktApi->trackUserInformation($this->getUser(), array(
+							'gender' => (isset($gender)) ? $gender : null,
+							'birthYear' => (isset($birthYear)) ? $birthYear : null,
+							'friendCount' => (isset($friendCount)) ? $friendCount : null
+						));
 						
-						$friendCount = sizeof($userFriendsInfo['data']);
-					} catch (FacebookApiException $e) { }
-					
-					$this->ktApi->trackUserInformation($this->getUser(), array(
-						'gender' => (isset($gender)) ? $gender : null,
-						'birthYear' => (isset($birthYear)) ? $birthYear : null,
-						'friendCount' => (isset($friendCount)) ? $friendCount : null
-					));
+						$this->setInstalledSession();
+					}
 		
 					// Spruce Media Ad Tracking  
 					if (isset($_GET['spruce_adid'])) {
@@ -388,7 +405,7 @@ class KontagentFacebook extends Facebook
 
 						$this->ktApi->sendHttpRequest($spruceUrl);
 					}
-				}
+				//}
 				
 				if (isset($_GET['kt_track_ins'])) {
 					$recipientUserIds = '';
@@ -421,9 +438,10 @@ class KontagentFacebook extends Facebook
 					));
 				}
 			}
-			
-		
-			if (isset($_GET['kt_track_psr'])) {
+
+			// we have to check that kt_redir_url isn't set because this library
+			// is instantiated on kontagent_redirect.php
+			if (isset($_GET['kt_track_psr']) && !isset($_GET['kt_redir_url'])) {
 				$this->ktApi->trackStreamPostResponse($_GET['kt_u'], 'stream', array(
 					'recipientUserId' => ($this->getUser()) ? $this->getUser() : null,
 					'subtype1' => (isset($_GET['kt_st1'])) ? $_GET['kt_st1'] : null,
@@ -432,7 +450,7 @@ class KontagentFacebook extends Facebook
 				));
 			}
 			
-			if (isset($_GET['kt_type'])) {		
+			if (isset($_GET['kt_type']) && !isset($_GET['kt_redir_url'])) {		
 				$this->ktApi->trackThirdPartyCommClick($_GET['kt_type'], array(
 					'userId' => ($this->getUser()) ? $this->getUser() : null,
 					'shortUniqueTrackingTag' => $_GET['kt_su'],
@@ -586,6 +604,25 @@ class KontagentFacebook extends Facebook
 		}
 			
 		return $this->removeTrailingComma($recipientUserIds);
+	}
+    
+        private function setInstalledSession()
+	{
+		$_SESSION['kt_installed'] = true;
+	}
+	
+	private function unsetInstalledSession()
+	{
+		unset($_SESSION['kt_installed']);
+	}
+	
+	private function isInstalledSessionSet()
+	{
+		if (isset($_SESSION['kt_installed']) && $_SESSION['kt_installed'] == true) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 }
 
@@ -1127,6 +1164,7 @@ class KontagentApi {
 	
 		return $this->sendMessage("mtu", $params, $validationErrorMsg);
 	}
+
 }
 
 ////////////////////////////////////////////////////////////////////////////////

@@ -1,369 +1,361 @@
-// Clone the Facebook JS SDK so we can override its methods
-var BASE_FB = {};
-BASE_FB.init = FB.init;
-BASE_FB.login = FB.login;
-BASE_FB.ui = FB.ui;
-BASE_FB.api = FB.api;
-
-// reference to Kontagent API object. Instantiated in FB.init().
-FB._ktApi = null;
-
-FB.getKontagentApi = function() 
-{
-	return FB._ktApi;
-}
+// Clone the Facebook JS SDK so we can override its methods
+var BASE_FB = {};
+function setKtParams() {    BASE_FB.init = FB.init;    BASE_FB.login = FB.login;    BASE_FB.ui = FB.ui;    BASE_FB.api = FB.api;    // reference to Kontagent API object. Instantiated in FB.init().    FB._ktApi = null;    bindToFacebookSDK();    if (window.fbAsyncInit) {        BASE_FB.callback();    }}
+function bindToFacebookSDK() {
+    FB.getKontagentApi = function() {
+        return FB._ktApi;
+    }
 
 
-FB.init = function(options) 
-{
-	BASE_FB.init(options);
+    FB.init = function(options) {
+        BASE_FB.init(options);
 
-	// instantiate Kontagent API object
-	FB._ktApi = new KontagentApi(KT_API_KEY, {
-		"useTestServer": KT_USE_TEST_SERVER, 
-		"useHttps": (KT_USE_HTTPS == 'auto') ? FB._isHttps() : KT_USE_HTTPS
-	})
+        // instantiate Kontagent API object
+        FB._ktApi = new KontagentApi(KT_API_KEY, {
+            "useTestServer": KT_USE_TEST_SERVER, 
+            "useHttps": (KT_USE_HTTPS == 'auto') ? FB._isHttps() : KT_USE_HTTPS
+        })
 
-	// Perform the landing page tracking. The timeout/delay is neccessary
-  	// otherwise
-	// FB will throw an error if we start making API calls too quickly.
-	setTimeout("FB._trackLanding()", 1000);
-}
+        // Perform the landing page tracking. The timeout/delay is neccessary
+        // otherwise
+        // FB will throw an error if we start making API calls too quickly.
+        setTimeout("FB._trackLanding()", 1000);
+    }
 
-FB.login = function (cb, opts) {
-	// Override the callback function to also send off an ApplicationAdded and
-	// UserInformation
-	// message on success.
-	var ktCb = function (loginResponse) {
-		if (loginResponse.authResponse) {
-			// Track Application Added
-			FB._ktApi.trackApplicationAdded(loginResponse.authResponse.userID, {
-				"uniqueTrackingTag": (KT_GET["kt_u"]) ? KT_GET["kt_u"] : null,
-				"shortUniqueTrackingTag": (KT_GET["kt_su"]) ? KT_GET["kt_su"] : null
-			});
-			
-			FB._trackUserInformation();
-			FB._trackSpruceMedia();
-		}
-		
-		// Fire off the original callback
-		if (cb) {
-			cb(loginResponse);
-		}
-	}
+    FB.login = function (cb, opts) {
+        // Override the callback function to also send off an ApplicationAdded and
+        // UserInformation
+        // message on success.
+        var ktCb = function (loginResponse) {
+            if (loginResponse.authResponse) {
+                // Track Application Added
+                FB._ktApi.trackApplicationAdded(loginResponse.authResponse.userID, {
+                    "uniqueTrackingTag": (KT_GET["kt_u"]) ? KT_GET["kt_u"] : null,
+                    "shortUniqueTrackingTag": (KT_GET["kt_su"]) ? KT_GET["kt_su"] : null
+                });
+                
+                FB._trackUserInformation();
+                FB._trackSpruceMedia();
+            }
+            
+            // Fire off the original callback
+            if (cb) {
+                cb(loginResponse);
+            }
+        }
+
+        BASE_FB.login(ktCb, opts);
+    }
 
-	BASE_FB.login(ktCb, opts);
-}
+    FB.ui = function (params, cb) {
+        var ktCb = cb;
+        var authResponse = FB.getAuthResponse();
+        
+        // Make sure the user is logged in and authenticated
+        if (authResponse && authResponse.userID) {	
+            // Implement the appropriate callback depending on what method they are
+                // trying to call.
+            switch(params.method.toLowerCase()) {
+                case 'apprequests':
+                    var uniqueTrackingTag = FB._ktApi.genUniqueTrackingTag();
+                
+                    // Append Kontagents tracking parameters to the data param.
+                    params.data = FB._appendKtVarsToDataField(params.data, {
+                        "kt_track_inr": 1,
+                        "kt_u": uniqueTrackingTag,
+                        "kt_st1": params.subtype1,
+                        "kt_st2": params.subtype2,
+                        "kt_st3": params.subtype3
+                    });
+                    
+                    ktCb = function(uiResponse) {
+                        if (uiResponse) {
+                            if (uiResponse.request_ids && uiResponse.request_ids.length > 0) {
+                                // Non-efficient requests, we need to make an extra call to retrieve the recipient UIDs
+                                FB._getRecipientUserIdsFromRequestIds(uiResponse.request_ids.join(','), function(response) {
+                                    FB._ktApi.trackInviteSent(authResponse.userID, response.recipientUserIds, uniqueTrackingTag, {
+                                        "subtype1": params.subtype1,
+                                        "subtype2": params.subtype2,
+                                        "subtype3": params.subtype3
+                                    });
+                                });
+                            } else if (uiResponse.request && uiResponse.to && uiResponse.to.length > 0) {
+                                // "Request 2.0 Efficient" mode. We have access to the UIDs
+                                FB._ktApi.trackInviteSent(authResponse.userID, uiResponse.to.join(','), uniqueTrackingTag, {
+                                    "subtype1": params.subtype1,
+                                    "subtype2": params.subtype2,
+                                    "subtype3": params.subtype3
+                                });
+                            }
+                        }
+                        
+                        if (cb) {
+                            cb(uiResponse);
+                        }
+                    };
+                    break;
+                    
+                case('feed'):
+                    var uniqueTrackingTag = FB._ktApi.genUniqueTrackingTag();
+                    
+                    if (params.link) {
+                        params.link = FB._appendKtVarsToUrl(KT_REDIRECT_URL, {
+                            "kt_track_psr": 1,
+                            "kt_u": uniqueTrackingTag,
+                            "kt_st1": params.subtype1,
+                            "kt_st2": params.subtype2,
+                            "kt_st3": params.subtype3,
+                            "kt_redir_url": params.link
+                        });
+                    }
 
-FB.ui = function (params, cb) {
-	var ktCb = cb;
-	var authResponse = FB.getAuthResponse();
-	
-	// Make sure the user is logged in and authenticated
-	if (authResponse && authResponse.userID) {	
-		// Implement the appropriate callback depending on what method they are
-    		// trying to call.
-		switch(params.method.toLowerCase()) {
-			case 'apprequests':
-				var uniqueTrackingTag = FB._ktApi.genUniqueTrackingTag();
-			
-				// Append Kontagents tracking parameters to the data param.
-				params.data = FB._appendKtVarsToDataField(params.data, {
-					"kt_track_inr": 1,
-					"kt_u": uniqueTrackingTag,
-					"kt_st1": params.subtype1,
-					"kt_st2": params.subtype2,
-					"kt_st3": params.subtype3
-				});
-				
-				ktCb = function(uiResponse) {
-					if (uiResponse) {
-						if (uiResponse.request_ids && uiResponse.request_ids.length > 0) {
-							// Non-efficient requests, we need to make an extra call to retrieve the recipient UIDs
-							FB._getRecipientUserIdsFromRequestIds(uiResponse.request_ids.join(','), function(response) {
-								FB._ktApi.trackInviteSent(authResponse.userID, response.recipientUserIds, uniqueTrackingTag, {
-									"subtype1": params.subtype1,
-									"subtype2": params.subtype2,
-									"subtype3": params.subtype3
-								});
-							});
-						} else if (uiResponse.request && uiResponse.to && uiResponse.to.length > 0) {
-							// "Request 2.0 Efficient" mode. We have access to the UIDs
-							FB._ktApi.trackInviteSent(authResponse.userID, uiResponse.to.join(','), uniqueTrackingTag, {
-								"subtype1": params.subtype1,
-								"subtype2": params.subtype2,
-								"subtype3": params.subtype3
-							});
-						}
-					}
-					
-					if (cb) {
-						cb(uiResponse);
-					}
-				};
-				break;
-				
-			case('feed'):
-				var uniqueTrackingTag = FB._ktApi.genUniqueTrackingTag();
-				
-				// If there is a link, we append the Kontagent tracking parameters
-				if (params.link) {
-					params.link = FB._appendKtVarsToUrl(params.link, {
-						"kt_track_psr": 1,
-						"kt_u": uniqueTrackingTag,
-						"kt_st1": params.subtype1,
-						"kt_st2": params.subtype2,
-						"kt_st3": params.subtype3
-					});
-				}
+                    if (params.actions && params.actions.length && params.actions.length > 0) {
+                        for(var i=0; i<params.actions.length; i++) {
+                            if (params.actions[i]['link']) {
+                                params.actions[i]['link'] = FB._appendKtVarsToUrl(PATH_TO_REDIRECT_PAGE, {
+                                    "kt_track_psr": 1,
+                                    "kt_u": uniqueTrackingTag,
+                                    "kt_st1": params.subtype1,
+                                    "kt_st2": params.subtype2,
+                                    "kt_st3": params.subtype3,
+                                    "kt_redir_url": params.actions[i]['link']
+                                });
+                            }
+                        }
+                    }
 
-				if (params.actions && params.actions.length && params.actions.length > 0) {
-					for(var i=0; i<params.actions.length; i++) {
-						if (params.actions[i]['link']) {
-							params.actions[i]['link'] = FB._appendKtVarsToUrl(params.actions[i]['link'], {
-								"kt_track_psr": 1,
-								"kt_u": uniqueTrackingTag,
-								"kt_st1": params.subtype1,
-								"kt_st2": params.subtype2,
-								"kt_st3": params.subtype3
-							});
-						}
-					}
-				}
+                    ktCb = function(uiResponse) {
+                        if (uiResponse && uiResponse.post_id) {
+                            FB._ktApi.trackStreamPost(authResponse.userID, uniqueTrackingTag, 'stream', {
+                                "subtype1": params.subtype1,
+                                "subtype2": params.subtype2,
+                                "subtype3": params.subtype3
+                            });
+                        }
+                        
+                        if (cb) {
+                            cb(uiResponse);
+                        }
+                    };
+                    break;
+                case("oauth"):
+                    // TODO: implement this. Currently, there is a bug in FB SDK.
+                    // NOTE: remember to check for presence of KT_GET['su']//KT_GET['u']
+                    break;
+            }
+        }
+
+        BASE_FB.ui(params, ktCb);
+    }
 
-				ktCb = function(uiResponse) {
-					if (uiResponse && uiResponse.post_id) {
-						FB._ktApi.trackStreamPost(authResponse.userID, uniqueTrackingTag, 'stream', {
-							"subtype1": params.subtype1,
-							"subtype2": params.subtype2,
-							"subtype3": params.subtype3
-						});
-					}
-					
-					if (cb) {
-						cb(uiResponse);
-					}
-				};
-				break;
-			case("oauth"):
-				// TODO: implement this. Currently, there is a bug in FB SDK.
-				// NOTE: remember to check for presence of KT_GET['su']//KT_GET['u']
-				break;
-		}
-	}
+    FB._trackLanding = function()
+    {
+        var authResponse = FB.getAuthResponse();
 
-	BASE_FB.ui(params, ktCb);
-}
+        // Page Requests are always tracked on the client side.
+        if (authResponse && authResponse.userID) {
+            FB._ktApi.trackPageRequest(authResponse.userID);
+        }
+        if (KT_SEND_CLIENT_SIDE) {
+            if (authResponse && authResponse.userID) {
+                //if (KT_GET['kt_track_apa'] && !KT_GET['error']) {
+                    if (!KT_IS_INSTALLED_SESSION_SET) {                        FB._ktApi._sendHttpRequestViaImgTag(KT_REDIRECT_URL + "?kt_set_session=1";                        KT_IS_INSTALLED_SESSION_SET = true;
+                        FB._ktApi.trackApplicationAdded(authResponse.userID, {
+                            "uniqueTrackingTag": (KT_GET['kt_u']) ? KT_GET['kt_u'] : null,
+                            "shortUniqueTrackingTag": (KT_GET['kt_su']) ? KT_GET['kt_su'] : null
+                        });
 
-FB._trackLanding = function()
-{
-	var authResponse = FB.getAuthResponse();
+                        FB._trackUserInformation();
+                    }                                        FB._trackSpruceMedia();	
+                //}
+                
+                if (KT_GET['kt_track_ins']) {
+                    if (KT_GET['request_ids'] && FB._isArray(KT_GET['request_ids'])) {
+                        // Non-efficient Requests, we need to make an extra call to get the uids
+                        FB._getRecipientUserIdsFromRequestIds(KT_GET['request_ids'].join(','), function(response) {
+                            FB._ktApi.trackInviteSent(
+                                authResponse.userID, 
+                                response.recipientUserIds,
+                                KT_GET['kt_u'],
+                                {
+                                    "subtype1": (KT_GET['kt_st1']) ? KT_GET['kt_st1'] : null,
+                                    "subtype2": (KT_GET['kt_st2']) ? KT_GET['kt_st2'] : null,
+                                    "subtype3": (KT_GET['kt_st3']) ? KT_GET['kt_st3'] : null
+                                }
+                            );
+                        });
+                    } else if (KT_GET['request'] && KT_GET['to'] && FB._isArray(KT_GET['to'])) {
+                        // Request 2.0 Efficient mode, we have direct access to recipeint uids
+                        FB._ktApi.trackInviteSent(
+                            authResponse.userID, 
+                            KT_GET['to'].join(','),
+                            KT_GET['kt_u'],
+                            {
+                                "subtype1": (KT_GET['kt_st1']) ? KT_GET['kt_st1'] : null,
+                                "subtype2": (KT_GET['kt_st2']) ? KT_GET['kt_st2'] : null,
+                                "subtype3": (KT_GET['kt_st3']) ? KT_GET['kt_st3'] : null
+                            }
+                        );
+                    }
+                }
+            
+                if (KT_GET['kt_track_pst'] && KT_GET['post_id']) {
+                    FB._ktApi.trackStreamPost(authResponse.userID, KT_GET['kt_u'], 'stream', {
+                        "subtype1": (KT_GET['kt_st1']) ? KT_GET['kt_st1'] : null,
+                        "subtype2": (KT_GET['kt_st2']) ? KT_GET['kt_st2'] : null,
+                        "subtype3": (KT_GET['kt_st3']) ? KT_GET['kt_st3'] : null
+                    });
+                }
+            }
+            
+            if (KT_GET['kt_track_psr']) {
+                FB._ktApi.trackStreamPostResponse(KT_GET['kt_u'], 'stream', {
+                    "recipientUserId": (authResponse && authResponse.userID) ? authResponse.userID : null,
+                    "subtype1": (KT_GET['kt_st1']) ? KT_GET['kt_st1'] : null,
+                    "subtype2": (KT_GET['kt_st2']) ? KT_GET['kt_st2'] : null,
+                    "subtype3": (KT_GET['kt_st3']) ? KT_GET['kt_st3'] : null
+                });
+            }
+            
+            if (KT_GET['kt_type']) {
+                // The shortUniqueTrackingTag is generated on the serverside landing
+                // method.
+                FB._ktApi.trackThirdPartyCommClick(KT_GET['kt_type'], KT_GET['kt_su'], {
+                    "userId": (authResponse && authResponse.userID) ? authResponse.userID : null,
+                    "subtype1": (KT_GET['kt_st1']) ? KT_GET['kt_st1'] : null,
+                    "subtype2": (KT_GET['kt_st2']) ? KT_GET['kt_st2'] : null,
+                    "subtype3": (KT_GET['kt_st3']) ? KT_GET['kt_st3'] : null
+                });
+            }
+        }
+    }
 
-	// Page Requests are always tracked on the client side.
-	if (authResponse && authResponse.userID) {
-		FB._ktApi.trackPageRequest(authResponse.userID);
-	}
+    // Appends KT tracking parameters to the data field of the Requests Dialog
+    // (see FB documentation for details).
+    FB._appendKtVarsToDataField = function(dataString, vars) 
+    {
+        dataString += '|';
+        
+        for (var key in vars) {
+            if (vars[key] != null && typeof vars[key] != 'undefined') {
+                dataString += key + '=' + vars[key] + '&';
+            }
+        }
+        
+        return FB._removeTrailingAmpersand(dataString);
+    }
 
-	if (KT_SEND_CLIENT_SIDE) {
-		if (authResponse && authResponse.userID) {
-			if (KT_GET['kt_track_apa'] && !KT_GET['error']) {
-				// Track the Application Added
-				FB._ktApi.trackApplicationAdded(authResponse.userID, {
-					"uniqueTrackingTag": (KT_GET['kt_u']) ? KT_GET['kt_u'] : null,
-					"shortUniqueTrackingTag": (KT_GET['kt_su']) ? KT_GET['kt_su'] : null
-				});
-				
-				FB._trackUserInformation();
-				FB._trackSpruceMedia();				
-			}
-			
-			if (KT_GET['kt_track_ins']) {
-				if (KT_GET['request_ids'] && FB._isArray(KT_GET['request_ids'])) {
-					// Non-efficient Requests, we need to make an extra call to get the uids
-					FB._getRecipientUserIdsFromRequestIds(KT_GET['request_ids'].join(','), function(response) {
-						FB._ktApi.trackInviteSent(
-							authResponse.userID, 
-							response.recipientUserIds,
-							KT_GET['kt_u'],
-							{
-								"subtype1": (KT_GET['kt_st1']) ? KT_GET['kt_st1'] : null,
-								"subtype2": (KT_GET['kt_st2']) ? KT_GET['kt_st2'] : null,
-								"subtype3": (KT_GET['kt_st3']) ? KT_GET['kt_st3'] : null
-							}
-						);
-					});
-				} else if (KT_GET['request'] && KT_GET['to'] && FB._isArray(KT_GET['to'])) {
-					// Request 2.0 Efficient mode, we have direct access to recipeint uids
-					FB._ktApi.trackInviteSent(
-						authResponse.userID, 
-						KT_GET['to'].join(','),
-						KT_GET['kt_u'],
-						{
-							"subtype1": (KT_GET['kt_st1']) ? KT_GET['kt_st1'] : null,
-							"subtype2": (KT_GET['kt_st2']) ? KT_GET['kt_st2'] : null,
-							"subtype3": (KT_GET['kt_st3']) ? KT_GET['kt_st3'] : null
-						}
-					);
-				}
-			}
-		
-			if (KT_GET['kt_track_pst'] && KT_GET['post_id']) {
-				FB._ktApi.trackStreamPost(authResponse.userID, KT_GET['kt_u'], 'stream', {
-					"subtype1": (KT_GET['kt_st1']) ? KT_GET['kt_st1'] : null,
-					"subtype2": (KT_GET['kt_st2']) ? KT_GET['kt_st2'] : null,
-					"subtype3": (KT_GET['kt_st3']) ? KT_GET['kt_st3'] : null
-				});
-			}
-		}
-		
-		if (KT_GET['kt_track_psr']) {
-			FB._ktApi.trackStreamPostResponse(KT_GET['kt_u'], 'stream', {
-				"recipientUserId": (authResponse && authResponse.userID) ? authResponse.userID : null,
-				"subtype1": (KT_GET['kt_st1']) ? KT_GET['kt_st1'] : null,
-				"subtype2": (KT_GET['kt_st2']) ? KT_GET['kt_st2'] : null,
-				"subtype3": (KT_GET['kt_st3']) ? KT_GET['kt_st3'] : null
-			});
-		}
-		
-		if (KT_GET['kt_type']) {
-			// The shortUniqueTrackingTag is generated on the serverside landing
-			// method.
-			FB._ktApi.trackThirdPartyCommClick(KT_GET['kt_type'], KT_GET['kt_su'], {
-				"userId": (authResponse && authResponse.userID) ? authResponse.userID : null,
-				"subtype1": (KT_GET['kt_st1']) ? KT_GET['kt_st1'] : null,
-				"subtype2": (KT_GET['kt_st2']) ? KT_GET['kt_st2'] : null,
-				"subtype3": (KT_GET['kt_st3']) ? KT_GET['kt_st3'] : null
-			});
-		}
-	}
-}
+    // Appends variables to a given URL. "vars" dataStringshould be an object
+    // in the form: {"var_name": var_value, ...}
+    FB._appendKtVarsToUrl = function(url, vars) 
+    {
+        if (url.indexOf('?') == -1) {
+            url += '?';
+        } else {
+            url += '&';
+        }
 
-// Appends KT tracking parameters to the data field of the Requests Dialog
-// (see FB documentation for details).
-FB._appendKtVarsToDataField = function(dataString, vars) 
-{
-	dataString += '|';
-	
-	for (var key in vars) {
-		if (vars[key] != null && typeof vars[key] != 'undefined') {
-			dataString += key + '=' + vars[key] + '&';
-		}
-	}
-	
-	return FB._removeTrailingAmpersand(dataString);
-}
+        for (var key in vars) {
+            if (vars[key] != null && typeof vars[key] != 'undefined') {
+                url += key + '=' + vars[key] + '&';
+            }
+        }
+        
+        return FB._removeTrailingAmpersand(url);
+    }
 
-// Appends variables to a given URL. "vars" dataStringshould be an object
-// in the form: {"var_name": var_value, ...}
-FB._appendKtVarsToUrl = function(url, vars) 
-{
-	if (url.indexOf('?') == -1) {
-		url += '?';
-	} else {
-		url += '&';
-	}
+    FB._trackUserInformation = function()
+    {
+        // Track the User Information
+        BASE_FB.api('/me', function(apiMeResponse) {
+            BASE_FB.api('/me/friends', function(apiFriendsResponse) {
+                var gender, birthYear, friendCount;
 
-	for (var key in vars) {
-		if (vars[key] != null && typeof vars[key] != 'undefined') {
-			url += key + '=' + vars[key] + '&';
-		}
-	}
-	
-	return FB._removeTrailingAmpersand(url);
-}
+                if (apiMeResponse.gender) {
+                    gender = apiMeResponse.gender.substring(0,1);
+                }
+                if (apiMeResponse.birthday) {
+                    var birthdayPieces = apiMeResponse.birthday.split('/');
+                
+                    if (birthdayPieces.length == 3) {
+                        birthYear = birthdayPieces[2];
+                    }
+                }
+                if (apiFriendsResponse.data) {
+                    friendCount = apiFriendsResponse.data.length;
+                }
+                
+                FB._ktApi.trackUserInformation(apiMeResponse.id, {
+                    "gender": gender,
+                    "birthYear": birthYear,
+                    "friendCount": friendCount
+                });
+            });
+        });
+    }
+
+    FB._trackSpruceMedia = function() {
+        // Spruce Media Ad Tracking
+        if (KT_GET['spruce_adid']) {
+            FB._ktApi._sendHttpRequestViaImgTag(window.location.protocol + "//bp-pixel.socialcash.com/100480/pixel.ssps?spruce_adid=" + KT_GET["spruce_adid"] + "&spruce_sid=" + FB._ktApi.genShortUniqueTrackingTag());
+        }
+    }
 
-FB._trackUserInformation = function()
-{
-	// Track the User Information
-	BASE_FB.api('/me', function(apiMeResponse) {
-		BASE_FB.api('/me/friends', function(apiFriendsResponse) {
-			var gender, birthYear, friendCount;
+    // Given a comma-separated list of requestIds will return the recipient userIds (comma-separated)
+    FB._getRecipientUserIdsFromRequestIds = function(requestIds, callback)
+    {
+        BASE_FB.api('', {"ids": requestIds}, function(response) {
+            var recipientUserIds = '';
+        
+            for(var key in response) {
+                recipientUserIds += response[key].to.id + ',';
+            }
+            
+            recipientUserIds = FB._removeTrailingComma(recipientUserIds);
+            
+            callback({"recipientUserIds": recipientUserIds});
+        });
+    }
 
-			if (apiMeResponse.gender) {
-				gender = apiMeResponse.gender.substring(0,1);
-			}
-			if (apiMeResponse.birthday) {
-				var birthdayPieces = apiMeResponse.birthday.split('/');
-			
-				if (birthdayPieces.length == 3) {
-					birthYear = birthdayPieces[2];
-				}
-			}
-			if (apiFriendsResponse.data) {
-				friendCount = apiFriendsResponse.data.length;
-			}
-			
-			FB._ktApi.trackUserInformation(apiMeResponse.id, {
-				"gender": gender,
-				"birthYear": birthYear,
-				"friendCount": friendCount
-			});
-		});
-	});
-}
+    // Returns whether the current URL is HTTPS
+    FB._isHttps = function()
+    {
+        if (window.location.protocol == 'https:') {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
-FB._trackSpruceMedia = function() {
-	// Spruce Media Ad Tracking
-	if (KT_GET['spruce_adid']) {
-		FB._ktApi._sendHttpRequestViaImgTag(window.location.protocol + "//bp-pixel.socialcash.com/100480/pixel.ssps?spruce_adid=" + KT_GET["spruce_adid"] + "&spruce_sid=" + FB._ktApi.genShortUniqueTrackingTag());
-	}
-}
+    // Returns true of the variable is an array, false otherwise.
+    FB._isArray = function(variable) {
+        if (!variable) {
+            return false;
+        } else if (variable instanceof Array) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
-// Given a comma-separated list of requestIds will return the recipient userIds (comma-separated)
-FB._getRecipientUserIdsFromRequestIds = function(requestIds, callback)
-{
-	BASE_FB.api('', {"ids": requestIds}, function(response) {
-		var recipientUserIds = '';
-	
-		for(var key in response) {
-			recipientUserIds += response[key].to.id + ',';
-		}
-		
-		recipientUserIds = FB._removeTrailingComma(recipientUserIds);
-		
-		callback({"recipientUserIds": recipientUserIds});
-	});
-}
+    FB._removeTrailingAmpersand = function(string) 
+    {
+        if (string.charAt(string.length-1) == '&') {
+            return string.slice(0, -1);
+        } else {
+            return string;
+        }
+    }
 
-// Returns whether the current URL is HTTPS
-FB._isHttps = function()
-{
-	if (window.location.protocol == 'https:') {
-		return true;
-	} else {
-		return false;
-	}
-}
-
-// Returns true of the variable is an array, false otherwise.
-FB._isArray = function(variable) {
-	if (!variable) {
-		return false;
-	} else if (variable instanceof Array) {
-		return true;
-	} else {
-		return false;
-	}
-}
-
-FB._removeTrailingAmpersand = function(string) 
-{
-	if (string.charAt(string.length-1) == '&') {
-		return string.slice(0, -1);
-	} else {
-		return string;
-	}
-}
-
-FB._removeTrailingComma = function(string) 
-{
-	if (string.charAt(string.length-1) == ',') {
-		return string.slice(0, -1);
-	} else {
-		return string;
-	}
-}
-
+    FB._removeTrailingComma = function(string) 
+    {
+        if (string.charAt(string.length-1) == ',') {
+            return string.slice(0, -1);
+        } else {
+            return string;
+        }
+    }
+}
 ////////////////////////////////////////////////////////////////////////////////
 
 /*
@@ -1232,3 +1224,4 @@ KtValidator._validateV = function(messageType, paramName, paramValue) {
 		return true;
 	}
 }
+if (window.fbAsyncInit) {    BASE_FB.callback = window.fbAsyncInit;    window.fbAsyncInit = setKtParams;} else {    setKtParams();}

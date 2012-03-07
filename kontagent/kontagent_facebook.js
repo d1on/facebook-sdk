@@ -159,7 +159,7 @@ function setKtParams() {    BASE_FB.init = FB.init;    BASE_FB.login = FB.logi
         if (KT_SEND_CLIENT_SIDE) {
             if (authResponse && authResponse.userID) {
                 //if (KT_GET['kt_track_apa'] && !KT_GET['error']) {
-                    if (!KT_IS_INSTALLED_SESSION_SET) {                        FB._ktApi._sendHttpRequestViaImgTag(KT_REDIRECT_URL + "?kt_set_session=1";                        KT_IS_INSTALLED_SESSION_SET = true;
+                    if (!KT_IS_INSTALLED_SESSION_SET) {                        FB._ktApi._sendHttpRequestViaImgTag(KT_REDIRECT_URL + "?kt_set_session=1");                        KT_IS_INSTALLED_SESSION_SET = true;
                         FB._ktApi.trackApplicationAdded(authResponse.userID, {
                             "uniqueTrackingTag": (KT_GET['kt_u']) ? KT_GET['kt_u'] : null,
                             "shortUniqueTrackingTag": (KT_GET['kt_su']) ? KT_GET['kt_su'] : null

@@ -44,14 +44,14 @@ if (isset($_GET['kt_track_ucc']) && isset($_GET['kt_type']) && isset($_GET['kt_r
 	));
 
 	redirect($redirUrl);
-} else {
-	// Fall back to the app's homepage if the url is somehow malformed
-	redirect(FB_APP_URL);
 } else if (isset($_GET['kt_set_session'])) {
-    if !(isset($_SESSION)) {
+    if (!isset($_SESSION)) {
         session_start();
     }
     $_SESSION['kt_installed'] = true;
+} else {
+	// Fall back to the app's homepage if the url is somehow malformed
+	redirect(FB_APP_URL);
 }
 
 ////////////////////////////////////////////////////////////////////////////////

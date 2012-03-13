@@ -11,7 +11,7 @@ $ktFacebook= new KontagentFacebook(array(
 
 $userId = $ktFacebook->getUser();
 
-if (isset($_GET['kt_track_ucc']) && isset($_GET['kt_type']) && isset($_GET['kt_redir_url'])) {
+if (isset($_GET['kt_track_ucc']) && isset($_GET['kt_type'])) {
 	$shortUniqueTrackingTag = $ktFacebook->getKontagentApi()->genShortUniqueTrackingTag();
 
 	$ktFacebook->getKontagentApi()->trackThirdPartyCommClick($_GET['kt_type'], array(
@@ -22,14 +22,16 @@ if (isset($_GET['kt_track_ucc']) && isset($_GET['kt_type']) && isset($_GET['kt_r
 		'subtype3' => isset($_GET['kt_st3']) ? $_GET['kt_st3'] : null
 	));
 
+    $target_url = isset($_GET['kt_redir_url']) ? $_GET['kt_redir_url'] : FB_APP_URL;
+
 	// append vars so that landing page tracks the install
-	$redirUrl = appendVarsToUrl($_GET['kt_redir_url'], array(
+	$redirUrl = appendVarsToUrl($target_url, array(
 		'kt_track_apa' => 1,
 		'kt_su' => $shortUniqueTrackingTag
 	));
 
 	redirect($redirUrl);
-} else if (isset($_GET['kt_track_psr'])  && isset($_GET['kt_u']) && isset($_GET['kt_redir_url'])) {
+} else if (isset($_GET['kt_track_psr'])  && isset($_GET['kt_u'])) {
 	$ktFacebook->getKontagentApi()->trackStreamPostResponse($_GET['kt_u'], 'stream', array(
 		'userId' => $userId,
 		'subtype1' => isset($_GET['kt_st1']) ? $_GET['kt_st1'] : null,
@@ -37,14 +39,17 @@ if (isset($_GET['kt_track_ucc']) && isset($_GET['kt_type']) && isset($_GET['kt_r
 		'subtype3' => isset($_GET['kt_st3']) ? $_GET['kt_st3'] : null
 	));
 
+    $target_url = isset($_GET['kt_redir_url']) ? $_GET['kt_redir_url'] : FB_APP_URL;
+
 	// append vars so that the landing page tracks the install
-	$redirUrl = appendVarsToUrl($_GET['kt_redir_url'], array(
+	$redirUrl = appendVarsToUrl($target_url, array(
 		'kt_track_apa' => 1,
 		'kt_u' => $_GET['kt_u']
 	));
 
 	redirect($redirUrl);
 } else if (isset($_GET['kt_set_session'])) {
+    // Don't redirect here, this is only ever accessed by an image tag
     if (!isset($_SESSION)) {
         session_start();
     }
@@ -88,6 +93,5 @@ function removeTrailingAmpersand($string)
 		return $string;
 	}
 }
-
 
 ?>

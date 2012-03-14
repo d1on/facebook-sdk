@@ -1,0 +1,1132 @@
+----- FILE  :  /home/kalsi/code/FACEBOOK-SDK/facebook-sdk/kontagent/kontagent_facebook.js -----
+Line 5, E:0006: Wrong indentation: expected any of {2} but got 4
+Line 6, E:0006: Wrong indentation: expected any of {2} but got 4
+Line 7, E:0006: Wrong indentation: expected any of {2} but got 4
+Line 8, E:0006: Wrong indentation: expected any of {2} but got 4
+Line 9, E:0006: Wrong indentation: expected any of {2} but got 4
+Line 10, E:0006: Wrong indentation: expected any of {2} but got 4
+Line 11, E:0006: Wrong indentation: expected any of {2} but got 4
+Line 12, E:0006: Wrong indentation: expected any of {2} but got 4
+Line 13, E:0006: Wrong indentation: expected any of {4} but got 8
+Line 14, E:0006: Wrong indentation: expected any of {2} but got 4
+Line 19, E:0006: Wrong indentation: expected any of {2} but got 4
+Line 21, E:0006: Wrong indentation: expected any of {4, 25} but got 8
+Line 22, E:0006: Wrong indentation: expected any of {2, 23} but got 4
+Line 24, E:0006: Wrong indentation: expected any of {2, 23} but got 4
+Line 25, E:0006: Wrong indentation: expected any of {4, 14, 25} but got 8
+Line 27, E:0006: Wrong indentation: expected any of {4, 14, 25} but got 8
+Line 28, E:0006: Wrong indentation: expected any of {4, 14, 25} but got 8
+Line 29, E:0006: Wrong indentation: expected any of {6, 16, 18, 27} but got 12
+Line 30, E:0006: Wrong indentation: expected any of {6, 16, 18, 27} but got 12
+Line 31, E:0006: Wrong indentation: expected any of {4, 14, 16, 25} but got 8
+Line 34, E:0006: Wrong indentation: expected any of {4, 14, 25} but got 8
+Line 35, E:0006: Wrong indentation: expected any of {4, 14, 25} but got 8
+Line 36, E:0006: Wrong indentation: expected any of {4, 14, 25} but got 8
+Line 37, E:0006: Wrong indentation: expected any of {4, 14, 25} but got 8
+Line 38, E:0006: Wrong indentation: expected any of {2, 12, 23} but got 4
+Line 40, E:0006: Wrong indentation: expected any of {2, 12, 23} but got 4
+Line 41, E:0006: Wrong indentation: expected any of {4, 14, 15, 25} but got 8
+Line 41, E:0110: Line too long (82 characters).
+Line 42, E:0006: Wrong indentation: expected any of {4, 14, 15, 25} but got 8
+Line 43, E:0006: Wrong indentation: expected any of {4, 14, 15, 25} but got 8
+Line 44, E:0006: Wrong indentation: expected any of {4, 14, 15, 25} but got 8
+Line 46, E:0006: Wrong indentation: expected any of {6, 16, 17, 27} but got 12
+Line 47, E:0006: Wrong indentation: expected any of {8, 18, 19, 29} but got 16
+Line 48, E:0006: Wrong indentation: expected any of {8, 18, 19, 29} but got 16
+Line 48, E:0110: Line too long (84 characters).
+Line 49, E:0110: Line too long (82 characters).
+Line 50, E:0110: Line too long (88 characters).
+Line 51, E:0006: Wrong indentation: expected any of {8, 18, 19, 29} but got 16
+Line 53, E:0006: Wrong indentation: expected any of {8, 18, 19, 29} but got 16
+Line 54, E:0006: Wrong indentation: expected any of {8, 18, 19, 29} but got 16
+Line 55, E:0006: Wrong indentation: expected any of {6, 16, 17, 27} but got 12
+Line 57, E:0006: Wrong indentation: expected any of {6, 16, 17, 27} but got 12
+Line 58, E:0006: Wrong indentation: expected any of {6, 16, 17, 27} but got 12
+Line 59, E:0006: Wrong indentation: expected any of {8, 18, 19, 29} but got 16
+Line 60, E:0006: Wrong indentation: expected any of {6, 16, 17, 27} but got 12
+Line 61, E:0006: Wrong indentation: expected any of {4, 14, 15, 25} but got 8
+Line 63, E:0006: Wrong indentation: expected any of {4, 14, 15, 25} but got 8
+Line 65, E:0006: Wrong indentation: expected any of {2, 12, 13, 23} but got 4
+Line 67, E:0006: Wrong indentation: expected any of {2, 12, 13, 23} but got 4
+Line 68, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 25} but got 8
+Line 69, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 25} but got 8
+Line 71, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 25} but got 8
+Line 72, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 25} but got 8
+Line 73, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 27} but got 12
+Line 75, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 27} but got 12
+Line 81, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 33, 36} but got 24
+Line 82, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 33, 36} but got 24
+Line 83, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 33, 36} but got 24
+Line 84, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 33, 36} but got 24
+Line 85, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 33, 36} but got 24
+Line 89, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 29, 33} but got 24
+Line 90, E:0006: Wrong indentation: expected any of {14, 22, 24, 25, 31, 35} but got 28
+Line 90, E:0110: Line too long (94 characters).
+Line 91, E:0006: Wrong indentation: expected any of {16, 24, 26, 27, 33, 37} but got 32
+Line 91, E:0110: Line too long (119 characters).
+Line 92, E:0006: Wrong indentation: expected any of {16, 24, 26, 27, 33, 37} but got 32
+Line 92, E:0110: Line too long (124 characters).
+Line 93, E:0006: Wrong indentation: expected any of {18, 26, 28, 29, 35, 39} but got 36
+Line 93, E:0110: Line too long (130 characters).
+Line 94, E:0006: Wrong indentation: expected any of {20, 28, 30, 31, 37, 41} but got 40
+Line 95, E:0006: Wrong indentation: expected any of {20, 28, 30, 31, 37, 41} but got 40
+Line 96, E:0006: Wrong indentation: expected any of {20, 28, 30, 31, 37, 41} but got 40
+Line 97, E:0006: Wrong indentation: expected any of {18, 26, 28, 29, 35, 39} but got 36
+Line 98, E:0006: Wrong indentation: expected any of {16, 24, 26, 27, 33, 37} but got 32
+Line 99, E:0006: Wrong indentation: expected any of {14, 22, 24, 25, 31, 35} but got 28
+Line 99, E:0110: Line too long (105 characters).
+Line 100, E:0006: Wrong indentation: expected any of {16, 24, 26, 27, 33, 37} but got 32
+Line 100, E:0110: Line too long (91 characters).
+Line 101, E:0006: Wrong indentation: expected any of {16, 24, 26, 27, 33, 37} but got 32
+Line 101, E:0110: Line too long (124 characters).
+Line 102, E:0006: Wrong indentation: expected any of {18, 26, 28, 29, 35, 39} but got 36
+Line 103, E:0006: Wrong indentation: expected any of {18, 26, 28, 29, 35, 39} but got 36
+Line 104, E:0006: Wrong indentation: expected any of {18, 26, 28, 29, 35, 39} but got 36
+Line 105, E:0006: Wrong indentation: expected any of {16, 24, 26, 27, 33, 37} but got 32
+Line 106, E:0006: Wrong indentation: expected any of {14, 22, 24, 25, 31, 35} but got 28
+Line 107, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 29, 33} but got 24
+Line 109, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 29, 33} but got 24
+Line 110, E:0006: Wrong indentation: expected any of {14, 22, 24, 25, 31, 35} but got 28
+Line 111, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 29, 33} but got 24
+Line 119, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 33} but got 24
+Line 126, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 26, 33} but got 24
+Line 129, E:0110: Line too long (95 characters).
+Line 130, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 33} but got 24
+Line 131, E:0006: Wrong indentation: expected any of {14, 22, 24, 25, 35} but got 28
+Line 132, E:0006: Wrong indentation: expected any of {16, 24, 26, 27, 37} but got 32
+Line 132, E:0110: Line too long (106 characters).
+Line 133, E:0006: Wrong indentation: expected any of {18, 26, 28, 29, 39, 46} but got 36
+Line 134, E:0006: Wrong indentation: expected any of {18, 26, 28, 29, 39, 46} but got 36
+Line 135, E:0006: Wrong indentation: expected any of {18, 26, 28, 29, 39, 46} but got 36
+Line 136, E:0006: Wrong indentation: expected any of {18, 26, 28, 29, 39, 46} but got 36
+Line 137, E:0006: Wrong indentation: expected any of {18, 26, 28, 29, 39, 46} but got 36
+Line 138, E:0006: Wrong indentation: expected any of {18, 26, 28, 29, 39, 46} but got 36
+Line 139, E:0006: Wrong indentation: expected any of {16, 24, 26, 27, 37, 44} but got 32
+Line 140, E:0006: Wrong indentation: expected any of {14, 22, 24, 25, 35} but got 28
+Line 141, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 33} but got 24
+Line 146, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 29, 33} but got 24
+Line 147, E:0006: Wrong indentation: expected any of {14, 22, 24, 25, 31, 35} but got 28
+Line 147, E:0110: Line too long (105 characters).
+Line 148, E:0006: Wrong indentation: expected any of {16, 24, 26, 27, 33, 37} but got 32
+Line 149, E:0006: Wrong indentation: expected any of {16, 24, 26, 27, 33, 37} but got 32
+Line 150, E:0006: Wrong indentation: expected any of {16, 24, 26, 27, 33, 37} but got 32
+Line 151, E:0006: Wrong indentation: expected any of {14, 22, 24, 25, 31, 35} but got 28
+Line 152, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 29, 33} but got 24
+Line 154, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 29, 33} but got 24
+Line 155, E:0006: Wrong indentation: expected any of {14, 22, 24, 25, 31, 35} but got 28
+Line 156, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 29, 33} but got 24
+Line 160, E:0110: Line too long (81 characters).
+Line 161, E:0110: Line too long (88 characters).
+Line 163, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 27} but got 12
+Line 165, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 25} but got 8
+Line 168, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 25} but got 8
+Line 169, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 23} but got 4
+Line 171, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 23} but got 4
+Line 173, E:0006: Wrong indentation: expected any of {6, 10, 12, 13, 14, 16, 17, 21, 23, 27} but got 4
+Line 175, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25} but got 8
+Line 178, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25} but got 8
+Line 179, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25} but got 8
+Line 180, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 25, 27} but got 12
+Line 182, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25} but got 8
+Line 184, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25} but got 8
+Line 185, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 25, 27} but got 12
+Line 188, E:0006: Wrong indentation: expected any of {8, 16, 18, 19, 27, 29} but got 20
+Line 190, E:0006: Wrong indentation: expected any of {10, 18, 20, 21, 29, 31} but got 24
+Line 190, E:0110: Line too long (99 characters).
+Line 191, E:0006: Wrong indentation: expected any of {10, 18, 20, 21, 29, 31} but got 24
+Line 194, E:0006: Wrong indentation: expected any of {10, 18, 20, 21, 29, 31} but got 24
+Line 195, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 31, 33} but got 28
+Line 195, E:0110: Line too long (90 characters).
+Line 196, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 31, 33} but got 28
+Line 196, E:0110: Line too long (96 characters).
+Line 197, E:0006: Wrong indentation: expected any of {10, 18, 20, 21, 29, 31} but got 24
+Line 201, E:0006: Wrong indentation: expected any of {10, 18, 20, 21, 29, 31} but got 24
+Line 202, E:0006: Wrong indentation: expected any of {8, 16, 18, 19, 27, 29} but got 20
+Line 204, E:0006: Wrong indentation: expected any of {8, 16, 18, 19, 27, 29} but got 20
+Line 207, E:0110: Line too long (86 characters).
+Line 208, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 31, 33} but got 24
+Line 208, E:0110: Line too long (96 characters).
+Line 209, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 31, 33} but got 24
+Line 209, E:0110: Line too long (115 characters).
+Line 210, E:0006: Wrong indentation: expected any of {14, 22, 24, 25, 33, 35} but got 28
+Line 211, E:0006: Wrong indentation: expected any of {18, 22, 24, 25, 26, 28, 29, 33, 35, 37, 39, 40} but got 32
+Line 212, E:0006: Wrong indentation: expected any of {18, 22, 24, 25, 26, 28, 29, 33, 35, 37, 39, 40} but got 32
+Line 213, E:0006: Wrong indentation: expected any of {18, 22, 24, 25, 26, 28, 29, 33, 35, 37, 39, 40} but got 32
+Line 214, E:0006: Wrong indentation: expected any of {18, 22, 24, 25, 26, 28, 29, 33, 35, 37, 39, 40} but got 32
+Line 215, E:0006: Wrong indentation: expected any of {20, 24, 26, 27, 28, 30, 31, 35, 37, 39, 41, 42} but got 36
+Line 215, E:0110: Line too long (93 characters).
+Line 216, E:0006: Wrong indentation: expected any of {20, 24, 26, 27, 28, 30, 31, 35, 37, 39, 41, 42} but got 36
+Line 216, E:0110: Line too long (93 characters).
+Line 217, E:0006: Wrong indentation: expected any of {20, 24, 26, 27, 28, 30, 31, 35, 37, 39, 41, 42} but got 36
+Line 217, E:0110: Line too long (92 characters).
+Line 218, E:0006: Wrong indentation: expected any of {18, 22, 24, 25, 26, 28, 29, 33, 35, 37, 39, 40} but got 32
+Line 219, E:0006: Wrong indentation: expected any of {14, 22, 24, 25, 33, 35} but got 28
+Line 220, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 31, 33} but got 24
+Line 221, E:0110: Line too long (96 characters).
+Line 222, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 31, 33} but got 24
+Line 222, E:0110: Line too long (94 characters).
+Line 223, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 31, 33} but got 24
+Line 224, E:0006: Wrong indentation: expected any of {16, 20, 22, 23, 24, 26, 27, 31, 33, 35, 37, 38} but got 28
+Line 224, E:0001: Extra space at end of line
+Line 225, E:0006: Wrong indentation: expected any of {16, 20, 22, 23, 24, 26, 27, 31, 33, 35, 37, 38} but got 28
+Line 226, E:0006: Wrong indentation: expected any of {16, 20, 22, 23, 24, 26, 27, 31, 33, 35, 37, 38} but got 28
+Line 227, E:0006: Wrong indentation: expected any of {16, 20, 22, 23, 24, 26, 27, 31, 33, 35, 37, 38} but got 28
+Line 228, E:0006: Wrong indentation: expected any of {18, 22, 24, 25, 26, 28, 29, 33, 35, 37, 39, 40} but got 32
+Line 228, E:0131: Single-quoted string preferred over double-quoted string.
+Line 228, E:0110: Line too long (89 characters).
+Line 229, E:0006: Wrong indentation: expected any of {18, 22, 24, 25, 26, 28, 29, 33, 35, 37, 39, 40} but got 32
+Line 229, E:0131: Single-quoted string preferred over double-quoted string.
+Line 229, E:0110: Line too long (89 characters).
+Line 230, E:0006: Wrong indentation: expected any of {18, 22, 24, 25, 26, 28, 29, 33, 35, 37, 39, 40} but got 32
+Line 230, E:0131: Single-quoted string preferred over double-quoted string.
+Line 230, E:0110: Line too long (88 characters).
+Line 231, E:0006: Wrong indentation: expected any of {16, 20, 22, 23, 24, 26, 27, 31, 33, 35, 37, 38} but got 28
+Line 232, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 31, 33} but got 24
+Line 237, E:0110: Line too long (94 characters).
+Line 238, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 31, 33} but got 24
+Line 238, E:0131: Single-quoted string preferred over double-quoted string.
+Line 238, E:0110: Line too long (81 characters).
+Line 239, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 31, 33} but got 24
+Line 239, E:0131: Single-quoted string preferred over double-quoted string.
+Line 239, E:0110: Line too long (81 characters).
+Line 240, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 31, 33} but got 24
+Line 240, E:0131: Single-quoted string preferred over double-quoted string.
+Line 243, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 25, 27} but got 12
+Line 245, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 25, 27} but got 12
+Line 247, E:0131: Single-quoted string preferred over double-quoted string.
+Line 247, E:0110: Line too long (106 characters).
+Line 248, E:0131: Single-quoted string preferred over double-quoted string.
+Line 249, E:0131: Single-quoted string preferred over double-quoted string.
+Line 250, E:0131: Single-quoted string preferred over double-quoted string.
+Line 252, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 25, 27} but got 12
+Line 254, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 25, 27} but got 12
+Line 255, E:0110: Line too long (84 characters).
+Line 257, E:0110: Line too long (88 characters).
+Line 258, E:0131: Single-quoted string preferred over double-quoted string.
+Line 258, E:0110: Line too long (97 characters).
+Line 259, E:0131: Single-quoted string preferred over double-quoted string.
+Line 260, E:0131: Single-quoted string preferred over double-quoted string.
+Line 261, E:0131: Single-quoted string preferred over double-quoted string.
+Line 263, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 25, 27} but got 12
+Line 264, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25} but got 8
+Line 266, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 21, 23} but got 4
+Line 268, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 21, 23} but got 4
+Line 269, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 21, 23} but got 4
+Line 271, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 21, 23} but got 4
+Line 272, E:0006: Wrong indentation: expected any of {6, 10, 12, 13, 14, 16, 17, 21, 23, 25, 27, 32} but got 4
+Line 274, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25, 34} but got 8
+Line 276, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25, 34} but got 8
+Line 277, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 25, 27, 36} but got 12
+Line 279, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 25, 27, 36} but got 12
+Line 280, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25, 34} but got 8
+Line 282, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25, 34} but got 8
+Line 284, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 21, 23, 32} but got 4
+Line 286, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 21, 23, 32} but got 4
+Line 287, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 21, 23, 32} but got 4
+Line 288, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 21, 23, 32} but got 4
+Line 289, E:0006: Wrong indentation: expected any of {6, 10, 12, 13, 14, 16, 17, 21, 23, 25, 26, 27, 32, 36} but got 4
+Line 291, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25, 28, 34} but got 8
+Line 292, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 25, 27, 30, 36} but got 12
+Line 293, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25, 28, 34} but got 8
+Line 294, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 25, 27, 30, 36} but got 12
+Line 296, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25, 28, 34} but got 8
+Line 298, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25, 28, 34} but got 8
+Line 299, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 25, 27, 30, 36} but got 12
+Line 301, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 25, 27, 30, 36} but got 12
+Line 302, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25, 28, 34} but got 8
+Line 304, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25, 28, 34} but got 8
+Line 305, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 21, 23, 26, 32} but got 4
+Line 308, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 21, 23, 26, 32} but got 4
+Line 309, E:0006: Wrong indentation: expected any of {6, 10, 12, 13, 14, 16, 17, 21, 23, 25, 26, 27, 29, 30, 32, 36} but got 4
+Line 310, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25, 28, 31, 34} but got 8
+Line 312, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25, 28, 31, 34} but got 8
+Line 314, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 25, 27, 30, 33, 36} but got 12
+Line 319, E:0002: Missing space after ","
+Line 325, E:0006: Wrong indentation: expected any of {12, 20, 22, 23, 31, 33, 36, 39, 42} but got 24
+Line 333, E:0131: Single-quoted string preferred over double-quoted string.
+Line 334, E:0131: Single-quoted string preferred over double-quoted string.
+Line 335, E:0131: Single-quoted string preferred over double-quoted string.
+Line 337, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 25, 27, 30, 33, 36} but got 12
+Line 338, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25, 28, 31, 34} but got 8
+Line 340, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 21, 23, 26, 29, 32} but got 4
+Line 344, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 21, 23, 26, 29, 32} but got 4
+Line 345, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25, 27, 28, 31, 34} but got 8
+Line 346, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25, 27, 28, 31, 34} but got 8
+Line 347, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 25, 27, 29, 30, 33, 36} but got 12
+Line 347, E:0131: Single-quoted string preferred over double-quoted string.
+Line 347, E:0131: Single-quoted string preferred over double-quoted string.
+Line 347, E:0131: Single-quoted string preferred over double-quoted string.
+Line 347, E:0110: Line too long (216 characters).
+Line 348, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25, 27, 28, 31, 34} but got 8
+Line 350, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 21, 23, 25, 26, 29, 32} but got 4
+Line 352, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 21, 23, 25, 26, 29, 32} but got 4
+Line 352, E:0110: Line too long (101 characters).
+Line 353, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 21, 23, 25, 26, 29, 32} but got 4
+Line 354, E:0006: Wrong indentation: expected any of {6, 10, 12, 13, 14, 16, 17, 21, 23, 25, 26, 27, 29, 30, 32, 33, 36, 42} but got 4
+Line 355, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25, 27, 28, 31, 34, 44} but got 8
+Line 355, E:0131: Single-quoted string preferred over double-quoted string.
+Line 356, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 25, 27, 29, 30, 33, 36, 46} but got 12
+Line 358, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 25, 27, 29, 30, 33, 36, 46} but got 12
+Line 358, E:0002: Missing space before "("
+Line 360, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 25, 27, 29, 30, 33, 36, 46} but got 12
+Line 362, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 25, 27, 29, 30, 33, 36, 46} but got 12
+Line 364, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 25, 27, 29, 30, 33, 36, 46} but got 12
+Line 364, E:0131: Single-quoted string preferred over double-quoted string.
+Line 365, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 23, 25, 27, 28, 31, 34, 44} but got 8
+Line 367, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 21, 23, 25, 26, 29, 32, 42} but got 4
+Line 369, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 21, 23, 25, 26, 29, 32, 42} but got 4
+Line 371, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 21, 23, 25, 26, 29, 32, 42} but got 4
+Line 372, E:0006: Wrong indentation: expected any of {6, 10, 12, 13, 14, 16, 17, 21, 23, 25, 26, 27, 29, 30, 32, 33, 36, 42, 46} but got 4
+Line 373, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 18, 23, 25, 27, 28, 31, 34, 44} but got 8
+Line 375, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 20, 25, 27, 29, 30, 33, 36, 46} but got 12
+Line 376, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 18, 23, 25, 27, 28, 31, 34, 44} but got 8
+Line 377, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 20, 25, 27, 29, 30, 33, 36, 46} but got 12
+Line 378, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 18, 23, 25, 27, 28, 31, 34, 44} but got 8
+Line 379, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 16, 21, 23, 25, 26, 29, 32, 42} but got 4
+Line 381, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 16, 21, 23, 25, 26, 29, 32, 42} but got 4
+Line 382, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 16, 21, 23, 25, 26, 29, 32, 42} but got 4
+Line 383, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 18, 23, 25, 27, 28, 31, 34, 44} but got 8
+Line 384, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 20, 25, 27, 29, 30, 33, 36, 46} but got 12
+Line 385, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 18, 23, 25, 27, 28, 31, 34, 44} but got 8
+Line 387, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 20, 25, 27, 29, 30, 33, 36, 46} but got 12
+Line 388, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 18, 23, 25, 27, 28, 31, 34, 44} but got 8
+Line 389, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 20, 25, 27, 29, 30, 33, 36, 46} but got 12
+Line 390, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 18, 23, 25, 27, 28, 31, 34, 44} but got 8
+Line 391, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 16, 21, 23, 25, 26, 29, 32, 42} but got 4
+Line 393, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 16, 21, 23, 25, 26, 29, 32, 42} but got 4
+Line 394, E:0006: Wrong indentation: expected any of {6, 10, 12, 13, 14, 16, 17, 20, 21, 23, 25, 26, 27, 29, 30, 32, 33, 36, 42, 46} but got 4
+Line 396, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 18, 23, 25, 27, 28, 31, 34, 44} but got 8
+Line 396, E:0002: Missing space before "-"
+Line 396, E:0002: Missing space after "-"
+Line 397, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 20, 25, 27, 29, 30, 33, 36, 46} but got 12
+Line 398, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 18, 23, 25, 27, 28, 31, 34, 44} but got 8
+Line 399, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 20, 25, 27, 29, 30, 33, 36, 46} but got 12
+Line 400, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 18, 23, 25, 27, 28, 31, 34, 44} but got 8
+Line 401, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 16, 21, 23, 25, 26, 29, 32, 42} but got 4
+Line 403, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 16, 21, 23, 25, 26, 29, 32, 42} but got 4
+Line 404, E:0006: Wrong indentation: expected any of {6, 10, 12, 13, 14, 16, 17, 20, 21, 23, 25, 26, 27, 28, 29, 30, 32, 33, 36, 42, 46} but got 4
+Line 406, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 18, 23, 25, 27, 28, 30, 31, 34, 44} but got 8
+Line 406, E:0002: Missing space before "-"
+Line 406, E:0002: Missing space after "-"
+Line 407, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 20, 25, 27, 29, 30, 32, 33, 36, 46} but got 12
+Line 408, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 18, 23, 25, 27, 28, 30, 31, 34, 44} but got 8
+Line 409, E:0006: Wrong indentation: expected any of {6, 14, 16, 17, 20, 25, 27, 29, 30, 32, 33, 36, 46} but got 12
+Line 410, E:0006: Wrong indentation: expected any of {4, 12, 14, 15, 18, 23, 25, 27, 28, 30, 31, 34, 44} but got 8
+Line 411, E:0006: Wrong indentation: expected any of {2, 10, 12, 13, 16, 21, 23, 25, 26, 28, 29, 32, 42} but got 4
+Line 424, E:0110: Line too long (100 characters).
+Line 425, E:0110: Line too long (114 characters).
+Line 428, E:0006: Wrong indentation: expected any of {2} but got 4
+Line 428, E:0131: Single-quoted string preferred over double-quoted string.
+Line 429, E:0006: Wrong indentation: expected any of {2} but got 4
+Line 429, E:0131: Single-quoted string preferred over double-quoted string.
+Line 430, E:0006: Wrong indentation: expected any of {2} but got 4
+Line 430, E:0131: Single-quoted string preferred over double-quoted string.
+Line 432, E:0006: Wrong indentation: expected any of {2} but got 4
+Line 434, E:0006: Wrong indentation: expected any of {2} but got 4
+Line 435, E:0006: Wrong indentation: expected any of {4} but got 8
+Line 435, E:0110: Line too long (100 characters).
+Line 436, E:0006: Wrong indentation: expected any of {4} but got 8
+Line 436, E:0110: Line too long (85 characters).
+Line 437, E:0006: Wrong indentation: expected any of {4} but got 8
+Line 437, E:0110: Line too long (103 characters).
+Line 438, E:0006: Wrong indentation: expected any of {2} but got 4
+Line 445, E:0110: Line too long (110 characters).
+Line 447, E:0220: No docs found for member 'KontagentApi.prototype._sendHttpRequestViaImgTag'
+Line 447, E:0110: Line too long (81 characters).
+Line 448, E:0006: Wrong indentation: expected any of {4, 51} but got 0
+Line 449, E:0006: Wrong indentation: expected any of {2, 53} but got 4
+Line 451, E:0006: Wrong indentation: expected any of {2, 53} but got 4
+Line 451, E:0110: Line too long (100 characters).
+Line 452, E:0006: Wrong indentation: expected any of {2, 53} but got 4
+Line 453, E:0006: Wrong indentation: expected any of {2, 53} but got 4
+Line 456, E:0006: Wrong indentation: expected any of {2, 53} but got 4
+Line 458, E:0006: Wrong indentation: expected any of {2, 53} but got 4
+Line 459, E:0011: Missing semicolon after function assigned to a variable
+Line 465, E:0110: Line too long (85 characters).
+Line 466, E:0110: Line too long (110 characters).
+Line 467, E:0110: Line too long (107 characters).
+Line 469, E:0220: No docs found for member 'KontagentApi.prototype._sendMessage'
+Line 469, E:0110: Line too long (111 characters).
+Line 470, E:0006: Wrong indentation: expected any of {2, 40, 53} but got 4
+Line 471, E:0006: Wrong indentation: expected any of {2, 40, 53} but got 4
+Line 471, E:0001: Extra space after "="
+Line 473, E:0006: Wrong indentation: expected any of {2, 40, 53} but got 4
+Line 476, E:0006: Wrong indentation: expected any of {4, 42, 55} but got 8
+Line 477, E:0006: Wrong indentation: expected any of {6, 44, 57} but got 12
+Line 477, E:0110: Line too long (92 characters).
+Line 479, E:0006: Wrong indentation: expected any of {6, 44, 57} but got 12
+Line 480, E:0006: Wrong indentation: expected any of {8, 46, 59} but got 16
+Line 481, E:0006: Wrong indentation: expected any of {10, 48, 61} but got 20
+Line 482, E:0006: Wrong indentation: expected any of {8, 46, 59} but got 16
+Line 484, E:0006: Wrong indentation: expected any of {8, 46, 59} but got 16
+Line 485, E:0006: Wrong indentation: expected any of {6, 44, 57} but got 12
+Line 486, E:0006: Wrong indentation: expected any of {4, 42, 55} but got 8
+Line 487, E:0006: Wrong indentation: expected any of {2, 40, 53} but got 4
+Line 489, E:0006: Wrong indentation: expected any of {2, 40, 53} but got 4
+Line 489, E:0005: Illegal tab in whitespace after ";"
+Line 489, E:0001: Extra space at end of line
+Line 491, E:0006: Wrong indentation: expected any of {2, 40, 53} but got 4
+Line 492, E:0006: Wrong indentation: expected any of {4, 42, 55} but got 8
+Line 492, E:0131: Single-quoted string preferred over double-quoted string.
+Line 492, E:0131: Single-quoted string preferred over double-quoted string.
+Line 492, E:0110: Line too long (111 characters).
+Line 493, E:0006: Wrong indentation: expected any of {2, 40, 53} but got 4
+Line 494, E:0006: Wrong indentation: expected any of {4, 42, 55} but got 8
+Line 495, E:0006: Wrong indentation: expected any of {6, 44, 57} but got 12
+Line 495, E:0131: Single-quoted string preferred over double-quoted string.
+Line 495, E:0131: Single-quoted string preferred over double-quoted string.
+Line 495, E:0110: Line too long (113 characters).
+Line 496, E:0006: Wrong indentation: expected any of {4, 42, 55} but got 8
+Line 497, E:0006: Wrong indentation: expected any of {6, 44, 57} but got 12
+Line 497, E:0131: Single-quoted string preferred over double-quoted string.
+Line 497, E:0131: Single-quoted string preferred over double-quoted string.
+Line 497, E:0110: Line too long (108 characters).
+Line 498, E:0006: Wrong indentation: expected any of {4, 42, 55} but got 8
+Line 499, E:0006: Wrong indentation: expected any of {2, 40, 53} but got 4
+Line 501, E:0006: Wrong indentation: expected any of {2, 40, 53} but got 4
+Line 502, E:0011: Missing semicolon after function assigned to a variable
+Line 511, E:0220: No docs found for member 'KontagentApi.prototype._httpBuildQuery'
+Line 512, E:0006: Wrong indentation: expected any of {2, 40, 43, 53} but got 4
+Line 513, E:0006: Wrong indentation: expected any of {2, 40, 43, 53} but got 4
+Line 515, E:0006: Wrong indentation: expected any of {2, 40, 43, 53} but got 4
+Line 515, E:0002: Missing space before "("
+Line 516, E:0006: Wrong indentation: expected any of {4, 42, 45, 55} but got 8
+Line 517, E:0006: Wrong indentation: expected any of {4, 42, 45, 55} but got 8
+Line 519, E:0006: Wrong indentation: expected any of {4, 42, 45, 55} but got 8
+Line 519, E:0131: Single-quoted string preferred over double-quoted string.
+Line 519, E:0001: Extra space at end of line
+Line 520, E:0006: Wrong indentation: expected any of {2, 40, 43, 53} but got 4
+Line 522, E:0006: Wrong indentation: expected any of {2, 40, 43, 53} but got 4
+Line 522, E:0131: Single-quoted string preferred over double-quoted string.
+Line 523, E:0011: Missing semicolon after function assigned to a variable
+Line 530, E:0220: No docs found for member 'KontagentApi.prototype._s4'
+Line 531, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 53} but got 4
+Line 531, E:0002: Missing space before "+"
+Line 531, E:0002: Missing space after "+"
+Line 531, E:0002: Missing space before "*"
+Line 531, E:0002: Missing space after "*"
+Line 531, E:0002: Missing space before "|"
+Line 531, E:0002: Missing space after "|"
+Line 532, E:0011: Missing semicolon after function assigned to a variable
+Line 539, E:0220: No docs found for member 'KontagentApi.prototype.genUniqueTrackingTag'
+Line 540, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 48, 53} but got 4
+Line 540, E:0131: Single-quoted string preferred over double-quoted string.
+Line 542, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 48, 53} but got 4
+Line 542, E:0002: Missing space before "("
+Line 542, E:0002: Missing space before "="
+Line 542, E:0002: Missing space after "="
+Line 542, E:0002: Missing space before "<"
+Line 542, E:0002: Missing space after "<"
+Line 543, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 50, 55} but got 8
+Line 544, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 48, 53} but got 4
+Line 546, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 48, 53} but got 4
+Line 547, E:0011: Missing semicolon after function assigned to a variable
+Line 554, E:0220: No docs found for member 'KontagentApi.prototype.genShortUniqueTrackingTag'
+Line 555, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 48, 53} but got 4
+Line 555, E:0131: Single-quoted string preferred over double-quoted string.
+Line 557, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 48, 53} but got 4
+Line 557, E:0002: Missing space before "("
+Line 557, E:0002: Missing space before "="
+Line 557, E:0002: Missing space after "="
+Line 557, E:0002: Missing space before "<"
+Line 557, E:0002: Missing space after "<"
+Line 558, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 50, 55} but got 8
+Line 559, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 48, 53} but got 4
+Line 561, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 48, 53} but got 4
+Line 563, E:0011: Missing semicolon after function assigned to a variable
+Line 570, E:0001: Extra space at end of line
+Line 571, E:0001: Extra space at end of line
+Line 577, E:0110: Line too long (110 characters).
+Line 578, E:0110: Line too long (107 characters).
+Line 580, E:0220: No docs found for member 'KontagentApi.prototype.trackInviteSent'
+Line 580, E:0110: Line too long (154 characters).
+Line 581, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 48, 53} but got 4
+Line 582, E:0006: Wrong indentation: expected any of {4, 20, 33, 42, 45, 50, 55} but got 8
+Line 582, E:0001: Extra space before ":"
+Line 583, E:0006: Wrong indentation: expected any of {4, 20, 33, 42, 45, 50, 55} but got 8
+Line 583, E:0001: Extra space before ":"
+Line 584, E:0006: Wrong indentation: expected any of {4, 20, 33, 42, 45, 50, 55} but got 8
+Line 584, E:0001: Extra space before ":"
+Line 585, E:0006: Wrong indentation: expected any of {2, 18, 31, 40, 43, 48, 53} but got 4
+Line 587, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 48, 53} but got 4
+Line 588, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 50, 55} but got 8
+Line 588, E:0110: Line too long (81 characters).
+Line 589, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 50, 55} but got 8
+Line 589, E:0110: Line too long (81 characters).
+Line 590, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 50, 55} but got 8
+Line 590, E:0110: Line too long (81 characters).
+Line 591, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 48, 53} but got 4
+Line 593, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 48, 53} but got 4
+Line 593, E:0131: Single-quoted string preferred over double-quoted string.
+Line 593, E:0110: Line too long (82 characters).
+Line 594, E:0011: Missing semicolon after function assigned to a variable
+Line 599, E:0001: Extra space at end of line
+Line 600, E:0001: Extra space at end of line
+Line 603, E:0110: Line too long (81 characters).
+Line 607, E:0110: Line too long (110 characters).
+Line 608, E:0110: Line too long (107 characters).
+Line 610, E:0220: No docs found for member 'KontagentApi.prototype.trackInviteResponse'
+Line 610, E:0110: Line too long (132 characters).
+Line 611, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 53} but got 4
+Line 612, E:0006: Wrong indentation: expected any of {4, 20, 33, 42, 45, 49, 50, 55} but got 8
+Line 612, E:0001: Extra space before ":"
+Line 613, E:0006: Wrong indentation: expected any of {4, 20, 33, 42, 45, 49, 50, 55} but got 8
+Line 613, E:0001: Extra space before ":"
+Line 614, E:0006: Wrong indentation: expected any of {2, 18, 31, 40, 43, 47, 48, 53} but got 4
+Line 616, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 53} but got 4
+Line 617, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 55} but got 8
+Line 617, E:0110: Line too long (93 characters).
+Line 618, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 55} but got 8
+Line 618, E:0110: Line too long (81 characters).
+Line 619, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 55} but got 8
+Line 619, E:0110: Line too long (81 characters).
+Line 620, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 55} but got 8
+Line 620, E:0110: Line too long (81 characters).
+Line 621, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 53} but got 4
+Line 623, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 53} but got 4
+Line 623, E:0131: Single-quoted string preferred over double-quoted string.
+Line 623, E:0110: Line too long (82 characters).
+Line 624, E:0011: Missing semicolon after function assigned to a variable
+Line 631, E:0001: Extra space at end of line
+Line 632, E:0001: Extra space at end of line
+Line 638, E:0110: Line too long (110 characters).
+Line 639, E:0110: Line too long (107 characters).
+Line 641, E:0220: No docs found for member 'KontagentApi.prototype.trackNotificationSent'
+Line 641, E:0110: Line too long (160 characters).
+Line 642, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 53} but got 4
+Line 643, E:0006: Wrong indentation: expected any of {4, 20, 33, 42, 45, 49, 50, 51, 55} but got 8
+Line 643, E:0001: Extra space before ":"
+Line 644, E:0006: Wrong indentation: expected any of {4, 20, 33, 42, 45, 49, 50, 51, 55} but got 8
+Line 644, E:0001: Extra space before ":"
+Line 645, E:0006: Wrong indentation: expected any of {4, 20, 33, 42, 45, 49, 50, 51, 55} but got 8
+Line 645, E:0001: Extra space before ":"
+Line 646, E:0006: Wrong indentation: expected any of {2, 18, 31, 40, 43, 47, 48, 49, 53} but got 4
+Line 648, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 53} but got 4
+Line 649, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 51, 55} but got 8
+Line 649, E:0110: Line too long (81 characters).
+Line 650, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 51, 55} but got 8
+Line 650, E:0110: Line too long (81 characters).
+Line 651, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 51, 55} but got 8
+Line 651, E:0110: Line too long (81 characters).
+Line 652, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 53} but got 4
+Line 654, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 53} but got 4
+Line 654, E:0131: Single-quoted string preferred over double-quoted string.
+Line 654, E:0110: Line too long (81 characters).
+Line 655, E:0011: Missing semicolon after function assigned to a variable
+Line 660, E:0001: Extra space at end of line
+Line 661, E:0001: Extra space at end of line
+Line 664, E:0110: Line too long (81 characters).
+Line 668, E:0110: Line too long (110 characters).
+Line 669, E:0110: Line too long (107 characters).
+Line 671, E:0220: No docs found for member 'KontagentApi.prototype.trackNotificationResponse'
+Line 671, E:0110: Line too long (138 characters).
+Line 672, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 53} but got 4
+Line 673, E:0006: Wrong indentation: expected any of {4, 20, 33, 42, 45, 49, 50, 51, 55} but got 8
+Line 673, E:0001: Extra space before ":"
+Line 674, E:0006: Wrong indentation: expected any of {4, 20, 33, 42, 45, 49, 50, 51, 55} but got 8
+Line 674, E:0001: Extra space before ":"
+Line 675, E:0006: Wrong indentation: expected any of {2, 18, 31, 40, 43, 47, 48, 49, 53} but got 4
+Line 677, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 53} but got 4
+Line 678, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 51, 55} but got 8
+Line 678, E:0110: Line too long (93 characters).
+Line 679, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 51, 55} but got 8
+Line 679, E:0110: Line too long (81 characters).
+Line 680, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 51, 55} but got 8
+Line 680, E:0110: Line too long (81 characters).
+Line 681, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 51, 55} but got 8
+Line 681, E:0110: Line too long (81 characters).
+Line 682, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 53} but got 4
+Line 684, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 53} but got 4
+Line 684, E:0131: Single-quoted string preferred over double-quoted string.
+Line 684, E:0110: Line too long (82 characters).
+Line 685, E:0011: Missing semicolon after function assigned to a variable
+Line 692, E:0001: Extra space at end of line
+Line 693, E:0110: Line too long (81 characters).
+Line 693, E:0001: Extra space at end of line
+Line 699, E:0110: Line too long (110 characters).
+Line 700, E:0110: Line too long (107 characters).
+Line 702, E:0220: No docs found for member 'KontagentApi.prototype.trackNotificationEmailSent'
+Line 702, E:0110: Line too long (165 characters).
+Line 703, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 53, 54} but got 4
+Line 704, E:0006: Wrong indentation: expected any of {4, 20, 33, 42, 45, 49, 50, 51, 55, 56} but got 8
+Line 704, E:0001: Extra space before ":"
+Line 705, E:0006: Wrong indentation: expected any of {4, 20, 33, 42, 45, 49, 50, 51, 55, 56} but got 8
+Line 705, E:0001: Extra space before ":"
+Line 706, E:0006: Wrong indentation: expected any of {4, 20, 33, 42, 45, 49, 50, 51, 55, 56} but got 8
+Line 706, E:0001: Extra space before ":"
+Line 707, E:0006: Wrong indentation: expected any of {2, 18, 31, 40, 43, 47, 48, 49, 53, 54} but got 4
+Line 709, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 53, 54} but got 4
+Line 710, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 51, 55, 56} but got 8
+Line 710, E:0110: Line too long (81 characters).
+Line 711, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 51, 55, 56} but got 8
+Line 711, E:0110: Line too long (81 characters).
+Line 712, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 51, 55, 56} but got 8
+Line 712, E:0110: Line too long (81 characters).
+Line 713, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 53, 54} but got 4
+Line 715, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 53, 54} but got 4
+Line 715, E:0131: Single-quoted string preferred over double-quoted string.
+Line 715, E:0110: Line too long (82 characters).
+Line 716, E:0011: Missing semicolon after function assigned to a variable
+Line 722, E:0001: Extra space at end of line
+Line 723, E:0110: Line too long (81 characters).
+Line 723, E:0001: Extra space at end of line
+Line 726, E:0110: Line too long (81 characters).
+Line 730, E:0110: Line too long (110 characters).
+Line 731, E:0110: Line too long (107 characters).
+Line 733, E:0220: No docs found for member 'KontagentApi.prototype.trackNotificationEmailResponse'
+Line 733, E:0110: Line too long (143 characters).
+Line 734, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 53, 54, 58} but got 4
+Line 735, E:0006: Wrong indentation: expected any of {4, 20, 33, 42, 45, 49, 50, 51, 55, 56, 60} but got 8
+Line 735, E:0001: Extra space before ":"
+Line 736, E:0006: Wrong indentation: expected any of {4, 20, 33, 42, 45, 49, 50, 51, 55, 56, 60} but got 8
+Line 736, E:0001: Extra space before ":"
+Line 737, E:0006: Wrong indentation: expected any of {2, 18, 31, 40, 43, 47, 48, 49, 53, 54, 58} but got 4
+Line 739, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 53, 54, 58} but got 4
+Line 740, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 51, 55, 56, 60} but got 8
+Line 740, E:0110: Line too long (93 characters).
+Line 741, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 51, 55, 56, 60} but got 8
+Line 741, E:0110: Line too long (81 characters).
+Line 742, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 51, 55, 56, 60} but got 8
+Line 742, E:0110: Line too long (81 characters).
+Line 743, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 51, 55, 56, 60} but got 8
+Line 743, E:0110: Line too long (81 characters).
+Line 744, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 53, 54, 58} but got 4
+Line 746, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 53, 54, 58} but got 4
+Line 746, E:0131: Single-quoted string preferred over double-quoted string.
+Line 746, E:0110: Line too long (82 characters).
+Line 747, E:0011: Missing semicolon after function assigned to a variable
+Line 753, E:0001: Extra space at end of line
+Line 754, E:0110: Line too long (81 characters).
+Line 754, E:0001: Extra space at end of line
+Line 757, E:0110: Line too long (94 characters).
+Line 762, E:0110: Line too long (110 characters).
+Line 763, E:0110: Line too long (107 characters).
+Line 765, E:0220: No docs found for member 'KontagentApi.prototype.trackStreamPost'
+Line 765, E:0110: Line too long (142 characters).
+Line 766, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 53, 54, 58} but got 4
+Line 767, E:0006: Wrong indentation: expected any of {4, 20, 33, 42, 45, 49, 50, 51, 55, 56, 60} but got 8
+Line 767, E:0001: Extra space before ":"
+Line 768, E:0006: Wrong indentation: expected any of {4, 20, 33, 42, 45, 49, 50, 51, 55, 56, 60} but got 8
+Line 768, E:0001: Extra space before ":"
+Line 769, E:0006: Wrong indentation: expected any of {4, 20, 33, 42, 45, 49, 50, 51, 55, 56, 60} but got 8
+Line 769, E:0001: Extra space before ":"
+Line 770, E:0006: Wrong indentation: expected any of {2, 18, 31, 40, 43, 47, 48, 49, 53, 54, 58} but got 4
+Line 772, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 53, 54, 58} but got 4
+Line 773, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 51, 55, 56, 60} but got 8
+Line 773, E:0110: Line too long (81 characters).
+Line 774, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 51, 55, 56, 60} but got 8
+Line 774, E:0110: Line too long (81 characters).
+Line 775, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 51, 55, 56, 60} but got 8
+Line 775, E:0110: Line too long (81 characters).
+Line 776, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 53, 54, 58} but got 4
+Line 778, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 53, 54, 58} but got 4
+Line 778, E:0131: Single-quoted string preferred over double-quoted string.
+Line 778, E:0110: Line too long (82 characters).
+Line 779, E:0011: Missing semicolon after function assigned to a variable
+Line 784, E:0001: Extra space at end of line
+Line 785, E:0110: Line too long (81 characters).
+Line 785, E:0001: Extra space at end of line
+Line 788, E:0110: Line too long (94 characters).
+Line 790, E:0110: Line too long (81 characters).
+Line 794, E:0110: Line too long (110 characters).
+Line 795, E:0110: Line too long (107 characters).
+Line 797, E:0220: No docs found for member 'KontagentApi.prototype.trackStreamPostResponse'
+Line 797, E:0110: Line too long (142 characters).
+Line 798, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 51, 53, 54, 58} but got 4
+Line 799, E:0006: Wrong indentation: expected any of {4, 20, 33, 42, 45, 49, 50, 51, 53, 55, 56, 60} but got 8
+Line 799, E:0001: Extra space before ":"
+Line 800, E:0006: Wrong indentation: expected any of {4, 20, 33, 42, 45, 49, 50, 51, 53, 55, 56, 60} but got 8
+Line 800, E:0001: Extra space before ":"
+Line 801, E:0006: Wrong indentation: expected any of {4, 20, 33, 42, 45, 49, 50, 51, 53, 55, 56, 60} but got 8
+Line 801, E:0001: Extra space before ":"
+Line 802, E:0006: Wrong indentation: expected any of {2, 18, 31, 40, 43, 47, 48, 49, 51, 53, 54, 58} but got 4
+Line 804, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 51, 53, 54, 58} but got 4
+Line 805, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 51, 53, 55, 56, 60} but got 8
+Line 805, E:0110: Line too long (93 characters).
+Line 806, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 51, 53, 55, 56, 60} but got 8
+Line 806, E:0110: Line too long (81 characters).
+Line 807, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 51, 53, 55, 56, 60} but got 8
+Line 807, E:0110: Line too long (81 characters).
+Line 808, E:0006: Wrong indentation: expected any of {4, 33, 42, 45, 49, 50, 51, 53, 55, 56, 60} but got 8
+Line 808, E:0110: Line too long (81 characters).
+Line 809, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 51, 53, 54, 58} but got 4
+Line 811, E:0006: Wrong indentation: expected any of {2, 31, 40, 43, 47, 48, 49, 51, 53, 54, 58} but got 4
+Line 811, E:0131: Single-quoted string preferred over double-quoted string.
+Line 811, E:0110: Line too long (82 characters).
+Line 812, E:0011: Missing semicolon after function assigned to a variable
+Line 821, E:0110: Line too long (90 characters).
+Line 825, E:0110: Line too long (110 characters).
+Line 826, E:0110: Line too long (107 characters).
+Line 828, E:0220: No docs found for member 'KontagentApi.prototype.trackEvent'
+Line 828, E:0110: Line too long (123 characters).
+Line 829, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 43, 47, 48, 49, 51, 53, 54, 58} but got 4
+Line 830, E:0006: Wrong indentation: expected any of {4, 20, 33, 40, 42, 45, 49, 50, 51, 53, 55, 56, 60} but got 8
+Line 830, E:0001: Extra space before ":"
+Line 831, E:0006: Wrong indentation: expected any of {4, 20, 33, 40, 42, 45, 49, 50, 51, 53, 55, 56, 60} but got 8
+Line 831, E:0001: Extra space before ":"
+Line 832, E:0006: Wrong indentation: expected any of {2, 18, 31, 38, 40, 43, 47, 48, 49, 51, 53, 54, 58} but got 4
+Line 834, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 43, 47, 48, 49, 51, 53, 54, 58} but got 4
+Line 835, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 45, 49, 50, 51, 53, 55, 56, 60} but got 8
+Line 836, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 45, 49, 50, 51, 53, 55, 56, 60} but got 8
+Line 837, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 45, 49, 50, 51, 53, 55, 56, 60} but got 8
+Line 837, E:0110: Line too long (81 characters).
+Line 838, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 45, 49, 50, 51, 53, 55, 56, 60} but got 8
+Line 838, E:0110: Line too long (81 characters).
+Line 839, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 45, 49, 50, 51, 53, 55, 56, 60} but got 8
+Line 839, E:0110: Line too long (81 characters).
+Line 840, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 43, 47, 48, 49, 51, 53, 54, 58} but got 4
+Line 842, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 43, 47, 48, 49, 51, 53, 54, 58} but got 4
+Line 842, E:0131: Single-quoted string preferred over double-quoted string.
+Line 842, E:0110: Line too long (82 characters).
+Line 843, E:0011: Missing semicolon after function assigned to a variable
+Line 850, E:0110: Line too long (87 characters).
+Line 850, E:0001: Extra space at end of line
+Line 851, E:0110: Line too long (89 characters).
+Line 851, E:0001: Extra space at end of line
+Line 853, E:0110: Line too long (91 characters).
+Line 853, E:0001: Extra space at end of line
+Line 854, E:0001: Extra space at end of line
+Line 856, E:0110: Line too long (110 characters).
+Line 857, E:0110: Line too long (107 characters).
+Line 859, E:0220: No docs found for member 'KontagentApi.prototype.trackApplicationAdded'
+Line 859, E:0110: Line too long (123 characters).
+Line 860, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 43, 47, 48, 49, 51, 53, 54, 58} but got 4
+Line 860, E:0001: Extra space before ":"
+Line 862, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 43, 47, 48, 49, 51, 53, 54, 58} but got 4
+Line 863, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 45, 49, 50, 51, 53, 55, 56, 60} but got 8
+Line 863, E:0110: Line too long (97 characters).
+Line 864, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 45, 49, 50, 51, 53, 55, 56, 60} but got 8
+Line 864, E:0110: Line too long (108 characters).
+Line 865, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 43, 47, 48, 49, 51, 53, 54, 58} but got 4
+Line 867, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 43, 47, 48, 49, 51, 53, 54, 58} but got 4
+Line 867, E:0131: Single-quoted string preferred over double-quoted string.
+Line 867, E:0110: Line too long (82 characters).
+Line 868, E:0011: Missing semicolon after function assigned to a variable
+Line 874, E:0110: Line too long (110 characters).
+Line 875, E:0110: Line too long (107 characters).
+Line 877, E:0220: No docs found for member 'KontagentApi.prototype.trackApplicationRemoved'
+Line 877, E:0110: Line too long (109 characters).
+Line 878, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 43, 47, 48, 49, 51, 53, 54, 58} but got 4
+Line 878, E:0001: Extra space before ":"
+Line 880, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 43, 47, 48, 49, 51, 53, 54, 58} but got 4
+Line 880, E:0131: Single-quoted string preferred over double-quoted string.
+Line 880, E:0110: Line too long (82 characters).
+Line 881, E:0011: Missing semicolon after function assigned to a variable
+Line 887, E:0001: Extra space at end of line
+Line 888, E:0001: Extra space at end of line
+Line 894, E:0110: Line too long (110 characters).
+Line 895, E:0110: Line too long (107 characters).
+Line 897, E:0220: No docs found for member 'KontagentApi.prototype.trackThirdPartyCommClick'
+Line 897, E:0110: Line too long (148 characters).
+Line 898, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 43, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 899, E:0006: Wrong indentation: expected any of {4, 20, 33, 40, 42, 45, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 899, E:0001: Extra space before ":"
+Line 900, E:0006: Wrong indentation: expected any of {4, 20, 33, 40, 42, 45, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 900, E:0001: Extra space before ":"
+Line 901, E:0006: Wrong indentation: expected any of {4, 20, 33, 40, 42, 45, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 901, E:0001: Extra space before ":"
+Line 902, E:0006: Wrong indentation: expected any of {2, 18, 31, 38, 40, 43, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 904, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 43, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 905, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 45, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 906, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 45, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 906, E:0110: Line too long (81 characters).
+Line 907, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 45, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 907, E:0110: Line too long (81 characters).
+Line 908, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 45, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 908, E:0110: Line too long (81 characters).
+Line 909, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 43, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 911, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 43, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 911, E:0131: Single-quoted string preferred over double-quoted string.
+Line 911, E:0110: Line too long (82 characters).
+Line 912, E:0011: Missing semicolon after function assigned to a variable
+Line 920, E:0110: Line too long (88 characters).
+Line 921, E:0110: Line too long (110 characters).
+Line 922, E:0110: Line too long (107 characters).
+Line 924, E:0220: No docs found for member 'KontagentApi.prototype.trackPageRequest'
+Line 924, E:0110: Line too long (118 characters).
+Line 925, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 926, E:0006: Wrong indentation: expected any of {4, 20, 33, 40, 42, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 926, E:0001: Extra space before ":"
+Line 927, E:0006: Wrong indentation: expected any of {2, 18, 31, 38, 40, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 929, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 930, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 930, E:0110: Line too long (82 characters).
+Line 931, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 931, E:0110: Line too long (85 characters).
+Line 932, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 934, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 934, E:0131: Single-quoted string preferred over double-quoted string.
+Line 934, E:0110: Line too long (82 characters).
+Line 935, E:0011: Missing semicolon after function assigned to a variable
+Line 944, E:0110: Line too long (83 characters).
+Line 946, E:0110: Line too long (110 characters).
+Line 947, E:0110: Line too long (107 characters).
+Line 949, E:0220: No docs found for member 'KontagentApi.prototype.trackUserInformation'
+Line 949, E:0001: Extra space after "function"
+Line 949, E:0110: Line too long (123 characters).
+Line 950, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 950, E:0001: Extra space before ":"
+Line 952, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 953, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 953, E:0110: Line too long (81 characters).
+Line 954, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 955, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 956, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 956, E:0110: Line too long (85 characters).
+Line 957, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 959, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 959, E:0131: Single-quoted string preferred over double-quoted string.
+Line 959, E:0110: Line too long (82 characters).
+Line 960, E:0011: Missing semicolon after function assigned to a variable
+Line 967, E:0110: Line too long (82 characters).
+Line 968, E:0110: Line too long (82 characters).
+Line 969, E:0110: Line too long (82 characters).
+Line 970, E:0110: Line too long (82 characters).
+Line 971, E:0110: Line too long (110 characters).
+Line 972, E:0110: Line too long (107 characters).
+Line 974, E:0220: No docs found for member 'KontagentApi.prototype.trackGoalCount'
+Line 974, E:0110: Line too long (116 characters).
+Line 975, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 975, E:0001: Extra space before ":"
+Line 977, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 978, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 978, E:0110: Line too long (85 characters).
+Line 979, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 979, E:0110: Line too long (85 characters).
+Line 980, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 980, E:0110: Line too long (85 characters).
+Line 981, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 981, E:0110: Line too long (85 characters).
+Line 982, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 984, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 984, E:0131: Single-quoted string preferred over double-quoted string.
+Line 984, E:0110: Line too long (82 characters).
+Line 985, E:0011: Missing semicolon after function assigned to a variable
+Line 993, E:0110: Line too long (110 characters).
+Line 997, E:0110: Line too long (110 characters).
+Line 998, E:0110: Line too long (107 characters).
+Line 1000, E:0220: No docs found for member 'KontagentApi.prototype.trackRevenue'
+Line 1000, E:0110: Line too long (121 characters).
+Line 1001, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1002, E:0006: Wrong indentation: expected any of {4, 20, 33, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1002, E:0001: Extra space before ":"
+Line 1003, E:0006: Wrong indentation: expected any of {4, 20, 33, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1003, E:0001: Extra space before ":"
+Line 1004, E:0006: Wrong indentation: expected any of {2, 18, 31, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1006, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1007, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1008, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1008, E:0110: Line too long (81 characters).
+Line 1009, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1009, E:0110: Line too long (81 characters).
+Line 1010, E:0006: Wrong indentation: expected any of {4, 33, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1010, E:0110: Line too long (81 characters).
+Line 1011, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1013, E:0006: Wrong indentation: expected any of {2, 31, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1013, E:0131: Single-quoted string preferred over double-quoted string.
+Line 1013, E:0110: Line too long (82 characters).
+Line 1014, E:0011: Missing semicolon after function assigned to a variable
+Line 1019, E:0001: Extra space at end of line
+Line 1029, E:0110: Line too long (95 characters).
+Line 1031, E:0110: Line too long (93 characters).
+Line 1035, E:0110: Line too long (82 characters).
+Line 1037, E:0220: No docs found for member 'KtValidator.validateParameter'
+Line 1038, E:0006: Wrong indentation: expected any of {2, 31, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1038, E:0110: Line too long (113 characters).
+Line 1039, E:0011: Missing semicolon after function assigned to a variable
+Line 1041, E:0220: No docs found for member 'KtValidator._upperCaseFirst'
+Line 1042, E:0006: Wrong indentation: expected any of {2, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1043, E:0011: Missing semicolon after function assigned to a variable
+Line 1045, E:0220: No docs found for member 'KtValidator._validateB'
+Line 1046, E:0006: Wrong indentation: expected any of {2, 27, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1047, E:0006: Wrong indentation: expected any of {2, 27, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1047, E:0131: Single-quoted string preferred over double-quoted string.
+Line 1047, E:0001: Extra space at end of line
+Line 1048, E:0120: Binary operator should go on previous line "||"
+Line 1049, E:0006: Wrong indentation: expected any of {2, 27, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1050, E:0006: Wrong indentation: expected any of {4, 29, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1051, E:0006: Wrong indentation: expected any of {2, 27, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1052, E:0006: Wrong indentation: expected any of {4, 29, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1053, E:0006: Wrong indentation: expected any of {2, 27, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1055, E:0011: Missing semicolon after function assigned to a variable
+Line 1057, E:0220: No docs found for member 'KtValidator._validateF'
+Line 1058, E:0006: Wrong indentation: expected any of {2, 27, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1059, E:0006: Wrong indentation: expected any of {2, 27, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1059, E:0131: Single-quoted string preferred over double-quoted string.
+Line 1059, E:0110: Line too long (99 characters).
+Line 1060, E:0006: Wrong indentation: expected any of {4, 29, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1060, E:0010: Missing semicolon at end of line
+Line 1061, E:0006: Wrong indentation: expected any of {2, 27, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1062, E:0006: Wrong indentation: expected any of {4, 29, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1063, E:0006: Wrong indentation: expected any of {2, 27, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1064, E:0011: Missing semicolon after function assigned to a variable
+Line 1066, E:0220: No docs found for member 'KtValidator._validateG'
+Line 1066, E:0005: Illegal tab in whitespace after "{"
+Line 1066, E:0001: Extra space at end of line
+Line 1067, E:0006: Wrong indentation: expected any of {2, 27, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1068, E:0006: Wrong indentation: expected any of {2, 27, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1070, E:0006: Wrong indentation: expected any of {2, 27, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1070, E:0131: Single-quoted string preferred over double-quoted string.
+Line 1071, E:0006: Wrong indentation: expected any of {4, 29, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1072, E:0006: Wrong indentation: expected any of {2, 27, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1073, E:0006: Wrong indentation: expected any of {4, 29, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1074, E:0006: Wrong indentation: expected any of {2, 27, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1075, E:0011: Missing semicolon after function assigned to a variable
+Line 1077, E:0220: No docs found for member 'KtValidator._validateGc1'
+Line 1078, E:0006: Wrong indentation: expected any of {2, 27, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1079, E:0006: Wrong indentation: expected any of {2, 27, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1079, E:0131: Single-quoted string preferred over double-quoted string.
+Line 1079, E:0001: Extra space at end of line
+Line 1080, E:0120: Binary operator should go on previous line "||"
+Line 1081, E:0006: Wrong indentation: expected any of {2, 27, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1082, E:0006: Wrong indentation: expected any of {4, 29, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1083, E:0006: Wrong indentation: expected any of {2, 27, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1084, E:0006: Wrong indentation: expected any of {4, 29, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1085, E:0006: Wrong indentation: expected any of {2, 27, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1086, E:0011: Missing semicolon after function assigned to a variable
+Line 1088, E:0220: No docs found for member 'KtValidator._validateGc2'
+Line 1089, E:0006: Wrong indentation: expected any of {2, 27, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1090, E:0011: Missing semicolon after function assigned to a variable
+Line 1092, E:0220: No docs found for member 'KtValidator._validateGc3'
+Line 1093, E:0006: Wrong indentation: expected any of {2, 27, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1094, E:0011: Missing semicolon after function assigned to a variable
+Line 1096, E:0220: No docs found for member 'KtValidator._validateGc4'
+Line 1097, E:0006: Wrong indentation: expected any of {2, 27, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1098, E:0011: Missing semicolon after function assigned to a variable
+Line 1100, E:0220: No docs found for member 'KtValidator._validateI'
+Line 1101, E:0006: Wrong indentation: expected any of {2, 27, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1102, E:0006: Wrong indentation: expected any of {2, 27, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1104, E:0006: Wrong indentation: expected any of {2, 27, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1104, E:0131: Single-quoted string preferred over double-quoted string.
+Line 1105, E:0006: Wrong indentation: expected any of {4, 29, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1106, E:0006: Wrong indentation: expected any of {2, 27, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1107, E:0006: Wrong indentation: expected any of {4, 29, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1108, E:0006: Wrong indentation: expected any of {2, 27, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1109, E:0011: Missing semicolon after function assigned to a variable
+Line 1111, E:0220: No docs found for member 'KtValidator._validateIp'
+Line 1112, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1113, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1113, E:0001: Extra space at end of line
+Line 1115, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1115, E:0131: Single-quoted string preferred over double-quoted string.
+Line 1116, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1117, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1118, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1119, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1120, E:0011: Missing semicolon after function assigned to a variable
+Line 1122, E:0220: No docs found for member 'KtValidator._validateL'
+Line 1123, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1124, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1124, E:0131: Single-quoted string preferred over double-quoted string.
+Line 1124, E:0110: Line too long (99 characters).
+Line 1125, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1126, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1127, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1128, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1129, E:0011: Missing semicolon after function assigned to a variable
+Line 1131, E:0220: No docs found for member 'KtValidator._validateLc'
+Line 1132, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1133, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1135, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1135, E:0131: Single-quoted string preferred over double-quoted string.
+Line 1136, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1137, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1138, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1139, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1140, E:0011: Missing semicolon after function assigned to a variable
+Line 1142, E:0220: No docs found for member 'KtValidator._validateLp'
+Line 1143, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1144, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1145, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1146, E:0011: Missing semicolon after function assigned to a variable
+Line 1148, E:0220: No docs found for member 'KtValidator._validateLs'
+Line 1149, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1150, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1151, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1152, E:0011: Missing semicolon after function assigned to a variable
+Line 1154, E:0220: No docs found for member 'KtValidator._validateN'
+Line 1155, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1156, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1158, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1158, E:0131: Single-quoted string preferred over double-quoted string.
+Line 1159, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1160, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1161, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1162, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1163, E:0011: Missing semicolon after function assigned to a variable
+Line 1165, E:0220: No docs found for member 'KtValidator._validateR'
+Line 1166, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1167, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1168, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1169, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1170, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1172, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1172, E:0131: Single-quoted string preferred over double-quoted string.
+Line 1173, E:0006: Wrong indentation: expected any of {6, 31, 32, 33, 35, 36, 38, 42, 44, 46, 47, 48, 51, 52, 53, 55, 56, 57, 58, 62} but got 12
+Line 1174, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1175, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1175, E:0110: Line too long (110 characters).
+Line 1176, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1177, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1177, E:0131: Single-quoted string preferred over double-quoted string.
+Line 1177, E:0110: Line too long (85 characters).
+Line 1178, E:0006: Wrong indentation: expected any of {6, 31, 32, 33, 35, 36, 38, 42, 44, 46, 47, 48, 51, 52, 53, 55, 56, 57, 58, 62} but got 12
+Line 1179, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1180, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1182, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1183, E:0011: Missing semicolon after function assigned to a variable
+Line 1185, E:0220: No docs found for member 'KtValidator._validateS'
+Line 1186, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1187, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1187, E:0131: Single-quoted string preferred over double-quoted string.
+Line 1187, E:0110: Line too long (81 characters).
+Line 1188, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1189, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1190, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1191, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1192, E:0011: Missing semicolon after function assigned to a variable
+Line 1194, E:0220: No docs found for member 'KtValidator._validateSt1'
+Line 1195, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1196, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1198, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1198, E:0131: Single-quoted string preferred over double-quoted string.
+Line 1199, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1200, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1201, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1202, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1203, E:0011: Missing semicolon after function assigned to a variable
+Line 1205, E:0220: No docs found for member 'KtValidator._validateSt2'
+Line 1206, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1207, E:0011: Missing semicolon after function assigned to a variable
+Line 1209, E:0220: No docs found for member 'KtValidator._validateSt3'
+Line 1210, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1211, E:0011: Missing semicolon after function assigned to a variable
+Line 1213, E:0220: No docs found for member 'KtValidator._validateSu'
+Line 1214, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1215, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1217, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1217, E:0131: Single-quoted string preferred over double-quoted string.
+Line 1218, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1219, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1220, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1221, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1222, E:0011: Missing semicolon after function assigned to a variable
+Line 1224, E:0220: No docs found for member 'KtValidator._validateTs'
+Line 1225, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1226, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1226, E:0131: Single-quoted string preferred over double-quoted string.
+Line 1226, E:0110: Line too long (81 characters).
+Line 1227, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1228, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1229, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1230, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1231, E:0011: Missing semicolon after function assigned to a variable
+Line 1233, E:0220: No docs found for member 'KtValidator._validateTu'
+Line 1234, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1235, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1236, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1238, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1239, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1241, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1241, E:0131: Single-quoted string preferred over double-quoted string.
+Line 1242, E:0006: Wrong indentation: expected any of {6, 31, 32, 33, 35, 36, 38, 42, 44, 46, 47, 48, 51, 52, 53, 55, 56, 57, 58, 62} but got 12
+Line 1243, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1244, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1245, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1245, E:0110: Line too long (102 characters).
+Line 1247, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1247, E:0131: Single-quoted string preferred over double-quoted string.
+Line 1248, E:0006: Wrong indentation: expected any of {6, 31, 32, 33, 35, 36, 38, 42, 44, 46, 47, 48, 51, 52, 53, 55, 56, 57, 58, 62} but got 12
+Line 1249, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1250, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1251, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1253, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1253, E:0131: Single-quoted string preferred over double-quoted string.
+Line 1254, E:0006: Wrong indentation: expected any of {6, 31, 32, 33, 35, 36, 38, 42, 44, 46, 47, 48, 51, 52, 53, 55, 56, 57, 58, 62} but got 12
+Line 1255, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1256, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1258, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1259, E:0011: Missing semicolon after function assigned to a variable
+Line 1261, E:0220: No docs found for member 'KtValidator._validateU'
+Line 1262, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1263, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1264, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1265, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1267, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1267, E:0131: Single-quoted string preferred over double-quoted string.
+Line 1268, E:0006: Wrong indentation: expected any of {6, 31, 32, 33, 35, 36, 38, 42, 44, 46, 47, 48, 51, 52, 53, 55, 56, 57, 58, 62} but got 12
+Line 1269, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1270, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1272, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1273, E:0011: Missing semicolon after function assigned to a variable
+Line 1275, E:0220: No docs found for member 'KtValidator._validateV'
+Line 1276, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1277, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1277, E:0131: Single-quoted string preferred over double-quoted string.
+Line 1277, E:0110: Line too long (81 characters).
+Line 1278, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1279, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1280, E:0006: Wrong indentation: expected any of {4, 29, 30, 31, 33, 34, 36, 40, 42, 44, 45, 46, 49, 50, 51, 53, 54, 55, 56, 60} but got 8
+Line 1281, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1282, E:0011: Missing semicolon after function assigned to a variable
+Line 1285, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1285, E:0220: No docs found for member 'BASE_FB.callback'
+Line 1286, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1286, E:0220: No docs found for member 'window.fbAsyncInit'
+Line 1288, E:0006: Wrong indentation: expected any of {2, 27, 28, 29, 31, 32, 34, 38, 40, 42, 43, 44, 47, 48, 49, 51, 52, 53, 54, 58} but got 4
+Line 1289, E:-002: INTERNAL ERROR: indentation stack is not empty: [
+  <JavaScriptToken: 447, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 469, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 511, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 530, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 539, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 554, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 580, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 610, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 641, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 671, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 702, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 733, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 765, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 797, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 828, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 859, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 877, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 897, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 924, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 949, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 974, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1000, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1037, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1041, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1045, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1057, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1066, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1077, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1088, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1092, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1096, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1100, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1111, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1122, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1131, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1142, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1148, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1154, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1165, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1185, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1194, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1205, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1209, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1213, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1224, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1233, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1261, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}, 
+  <JavaScriptToken: 1275, operator, "=", {}, MetaData(Context(statement > root), optype: 'binary')> OVERRIDDEN [by "{"] {is_block: False, is_transient: True}]
+Found 1076 errors, including 615 new errors, in 1 files (0 files OK).
+
+Some of the errors reported by GJsLint may be auto-fixable using the script
+fixjsstyle. Please double check any changes it makes and report any bugs. The
+script can be run by executing:
+
+fixjsstyle --strict kontagent_facebook.js 

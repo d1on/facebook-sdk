@@ -187,13 +187,13 @@ function bindToFacebookSDK() {
                 //if (KT_GET['kt_track_apa'] && !KT_GET['error']) {
                     if (!KT_IS_INSTALLED_SESSION_SET) {
 
-                        FB._ktApi._sendHttpRequestViaImgTag(KT_REDIRECT_URL + "?kt_set_session=1");
+                        FB._ktApi._sendHttpRequestViaImgTag(KT_REDIRECT_URL + '?kt_set_session=1');
                         KT_IS_INSTALLED_SESSION_SET = true;
 
 
                         FB._ktApi.trackApplicationAdded(authResponse.userID, {
-                            "uniqueTrackingTag": (KT_GET['kt_u']) ? KT_GET['kt_u'] : null,
-                            "shortUniqueTrackingTag": (KT_GET['kt_su']) ? KT_GET['kt_su'] : null
+                            'uniqueTrackingTag': (KT_GET['kt_u']) ? KT_GET['kt_u'] : null,
+                            'shortUniqueTrackingTag': (KT_GET['kt_su']) ? KT_GET['kt_su'] : null
                         });
 
 
@@ -208,26 +208,26 @@ function bindToFacebookSDK() {
                         // Non-efficient Requests, we need to make an extra call to get the uids
                         FB._getRecipientUserIdsFromRequestIds(KT_GET['request_ids'].join(','), function(response) {
                             FB._ktApi.trackInviteSent(
-                                authResponse.userID, 
+                                authResponse.userID,
                                 response.recipientUserIds,
                                 KT_GET['kt_u'],
                                 {
-                                    "subtype1": (KT_GET['kt_st1']) ? KT_GET['kt_st1'] : null,
-                                    "subtype2": (KT_GET['kt_st2']) ? KT_GET['kt_st2'] : null,
-                                    "subtype3": (KT_GET['kt_st3']) ? KT_GET['kt_st3'] : null
+                                    'subtype1': (KT_GET['kt_st1']) ? KT_GET['kt_st1'] : null,
+                                    'ubtype2': (KT_GET['kt_st2']) ? KT_GET['kt_st2'] : null,
+                                    'subtype3': (KT_GET['kt_st3']) ? KT_GET['kt_st3'] : null
                                 }
                             );
                         });
                     } else if (KT_GET['request'] && KT_GET['to'] && FB._isArray(KT_GET['to'])) {
                         // Request 2.0 Efficient mode, we have direct access to recipeint uids
                         FB._ktApi.trackInviteSent(
-                            authResponse.userID, 
+                            authResponse.userID,
                             KT_GET['to'].join(','),
                             KT_GET['kt_u'],
                             {
-                                "subtype1": (KT_GET['kt_st1']) ? KT_GET['kt_st1'] : null,
-                                "subtype2": (KT_GET['kt_st2']) ? KT_GET['kt_st2'] : null,
-                                "subtype3": (KT_GET['kt_st3']) ? KT_GET['kt_st3'] : null
+                                'subtype1': (KT_GET['kt_st1']) ? KT_GET['kt_st1'] : null,
+                                'subtype2': (KT_GET['kt_st2']) ? KT_GET['kt_st2'] : null,
+                                'subtype3': (KT_GET['kt_st3']) ? KT_GET['kt_st3'] : null
                             }
                         );
                     }
@@ -235,19 +235,19 @@ function bindToFacebookSDK() {
 
                 if (KT_GET['kt_track_pst'] && KT_GET['post_id']) {
                     FB._ktApi.trackStreamPost(authResponse.userID, KT_GET['kt_u'], 'stream', {
-                        "subtype1": (KT_GET['kt_st1']) ? KT_GET['kt_st1'] : null,
-                        "subtype2": (KT_GET['kt_st2']) ? KT_GET['kt_st2'] : null,
-                        "subtype3": (KT_GET['kt_st3']) ? KT_GET['kt_st3'] : null
+                        'subtype1': (KT_GET['kt_st1']) ? KT_GET['kt_st1'] : null,
+                        'subtype2': (KT_GET['kt_st2']) ? KT_GET['kt_st2'] : null,
+                        'subtype3': (KT_GET['kt_st3']) ? KT_GET['kt_st3'] : null
                     });
                 }
             }
 
             if (KT_GET['kt_track_psr']) {
                 FB._ktApi.trackStreamPostResponse(KT_GET['kt_u'], 'stream', {
-                    "recipientUserId": (authResponse && authResponse.userID) ? authResponse.userID : null,
-                    "subtype1": (KT_GET['kt_st1']) ? KT_GET['kt_st1'] : null,
-                    "subtype2": (KT_GET['kt_st2']) ? KT_GET['kt_st2'] : null,
-                    "subtype3": (KT_GET['kt_st3']) ? KT_GET['kt_st3'] : null
+                    'recipientUserId': (authResponse && authResponse.userID) ? authResponse.userID : null,
+                    'subtype1': (KT_GET['kt_st1']) ? KT_GET['kt_st1'] : null,
+                    'subtype2': (KT_GET['kt_st2']) ? KT_GET['kt_st2'] : null,
+                    'subtype3': (KT_GET['kt_st3']) ? KT_GET['kt_st3'] : null
                 });
             }
 
@@ -255,10 +255,10 @@ function bindToFacebookSDK() {
                 // The shortUniqueTrackingTag is generated on the serverside landing
                 // method.
                 FB._ktApi.trackThirdPartyCommClick(KT_GET['kt_type'], KT_GET['kt_su'], {
-                    "userId": (authResponse && authResponse.userID) ? authResponse.userID : null,
-                    "subtype1": (KT_GET['kt_st1']) ? KT_GET['kt_st1'] : null,
-                    "subtype2": (KT_GET['kt_st2']) ? KT_GET['kt_st2'] : null,
-                    "subtype3": (KT_GET['kt_st3']) ? KT_GET['kt_st3'] : null
+                    'userId': (authResponse && authResponse.userID) ? authResponse.userID : null,
+                    'subtype1': (KT_GET['kt_st1']) ? KT_GET['kt_st1'] : null,
+                    'subtype2': (KT_GET['kt_st2']) ? KT_GET['kt_st2'] : null,
+                    'subtype3': (KT_GET['kt_st3']) ? KT_GET['kt_st3'] : null
                 });
             }
         }
@@ -316,7 +316,7 @@ function bindToFacebookSDK() {
 
 
                 if (apiMeResponse.gender) {
-                    gender = apiMeResponse.gender.substring(0,1);
+                    gender = apiMeResponse.gender.substring(0, 1);
                 }
                 if (apiMeResponse.birthday) {
                     var birthdayPieces = apiMeResponse.birthday.split('/');
@@ -330,9 +330,9 @@ function bindToFacebookSDK() {
                 }
 
                 FB._ktApi.trackUserInformation(apiMeResponse.id, {
-                    "gender": gender,
-                    "birthYear": birthYear,
-                    "friendCount": friendCount
+                    'gender': gender,
+                    'birthYear': birthYear,
+                    'friendCount': friendCount
                 });
             });
         });
@@ -344,7 +344,7 @@ function bindToFacebookSDK() {
     FB._trackSpruceMedia = function() {
         // Spruce Media Ad Tracking
         if (KT_GET['spruce_adid']) {
-            FB._ktApi._sendHttpRequestViaImgTag(window.location.protocol + "//bp-pixel.socialcash.com/100480/pixel.ssps?spruce_adid=" + KT_GET["spruce_adid"] + "&spruce_sid=" + FB._ktApi.genShortUniqueTrackingTag());
+            FB._ktApi._sendHttpRequestViaImgTag(window.location.protocol + '//bp-pixel.socialcash.com/100480/pixel.ssps?spruce_adid=' + KT_GET['spruce_adid'] + '&spruce_sid=' + FB._ktApi.genShortUniqueTrackingTag());
         }
 
     }
@@ -352,16 +352,16 @@ function bindToFacebookSDK() {
     // Given a comma-separated list of requestIds will return the recipient userIds (comma-separated)
     FB._getRecipientUserIdsFromRequestIds = function(requestIds, callback)
     {
-        BASE_FB.api('', {"ids": requestIds}, function(response) {
+        BASE_FB.api('', {'ids': requestIds}, function(response) {
             var recipientUserIds = '';
 
-            for(var key in response) {
+            for (var key in response) {
                 recipientUserIds += response[key].to.id + ',';
             }
 
             recipientUserIds = FB._removeTrailingComma(recipientUserIds);
 
-            callback({"recipientUserIds": recipientUserIds});
+            callback({'recipientUserIds': recipientUserIds});
         });
 
     }
@@ -393,7 +393,7 @@ function bindToFacebookSDK() {
     FB._removeTrailingAmpersand = function(string) 
     {
 
-        if (string.charAt(string.length-1) == '&') {
+        if (string.charAt(string.length - 1) == '&') {
             return string.slice(0, -1);
         } else {
             return string;
@@ -403,7 +403,7 @@ function bindToFacebookSDK() {
     FB._removeTrailingComma = function(string) 
     {
 
-        if (string.charAt(string.length-1) == ',') {
+        if (string.charAt(string.length - 1) == ',') {
             return string.slice(0, -1);
         } else {
             return string;
@@ -425,9 +425,9 @@ function bindToFacebookSDK() {
 * @param {bool} [optionalParams.validateParams] Whether to validate the parameters passed into the tracking method
 */
 function KontagentApi(apiKey, optionalParams) {
-    this._baseApiUrl = "http://api.geo.kontagent.net/api/v1/";
-    this._baseHttpsApiUrl = "https://api.geo.kontagent.net/api/v1/";
-    this._baseTestServerUrl = "http://test-server.kontagent.com/api/v1/";
+    this._baseApiUrl = 'http://api.geo.kontagent.net/api/v1/';
+    this._baseHttpsApiUrl = 'https://api.geo.kontagent.net/api/v1/';
+    this._baseTestServerUrl = 'http://test-server.kontagent.com/api/v1/';
 
     this._apiKey = apiKey;
 
@@ -456,7 +456,7 @@ KontagentApi.prototype._sendHttpRequestViaImgTag = function(url, successCallback
     }
 
     img.src = url;
-}
+};
 
 /*
 * Sends the API message by creating an <img> tag.
@@ -468,7 +468,7 @@ KontagentApi.prototype._sendHttpRequestViaImgTag = function(url, successCallback
 */
 KontagentApi.prototype._sendMessage = function(messageType, params, successCallback, validationErrorCallback) {
     // add a timestamp param to prevent browser caching
-    params['ts'] =  new Date().getTime();
+    params['ts'] = new Date().getTime();
 
     if (this._validateParams == true) {
     var result;
@@ -486,20 +486,20 @@ KontagentApi.prototype._sendMessage = function(messageType, params, successCallb
         }
     }
 
-    var url;	
+    var url;
 
     if (this._useTestServer == true) {
-        url = this._baseTestServerUrl + this._apiKey + "/" + messageType + "/?" + this._httpBuildQuery(params);
+        url = this._baseTestServerUrl + this._apiKey + '/' + messageType + '/?' + this._httpBuildQuery(params);
     } else {
         if (this._useHttps == true) {
-            url = this._baseHttpsApiUrl + this._apiKey + "/" + messageType + "/?" + this._httpBuildQuery(params);
+            url = this._baseHttpsApiUrl + this._apiKey + '/' + messageType + '/?' + this._httpBuildQuery(params);
         } else {
-            url = this._baseApiUrl + this._apiKey + "/" + messageType + "/?" + this._httpBuildQuery(params);
+            url = this._baseApiUrl + this._apiKey + '/' + messageType + '/?' + this._httpBuildQuery(params);
         }
     }
 
     this._sendHttpRequestViaImgTag(url, successCallback);
-}
+};
 
 /*
 * Generate URL-encoded query string (same as PHP's http_build_query())
@@ -512,15 +512,15 @@ KontagentApi.prototype._httpBuildQuery = function(data) {
     var query, key, val;
     var tmpArray = [];
 
-    for(key in data) {
+    for (key in data) {
         val = encodeURIComponent(decodeURIComponent(data[key].toString()));
         key = encodeURIComponent(decodeURIComponent(key));
 
-        tmpArray.push(key + "=" + val);  
+        tmpArray.push(key + '=' + val);
     }
 
-    return tmpArray.join("&");
-}
+    return tmpArray.join('&');
+};
 
 /*
 * Returns random 4-character hex
@@ -528,8 +528,8 @@ KontagentApi.prototype._httpBuildQuery = function(data) {
 * @return {string} Random 4-character hex value
 */
 KontagentApi.prototype._s4 = function() {
-    return (((1+Math.random())*0x10000)|0).toString(16).substring(1);
-}
+    return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
+};
 
 /*
 * Generates a unique tracking tag.
@@ -537,14 +537,14 @@ KontagentApi.prototype._s4 = function() {
 *  @return {string} The unique tracking tag
 */
 KontagentApi.prototype.genUniqueTrackingTag = function() {
-    var uniqueTrackingTag = "";
+    var uniqueTrackingTag = '';
 
-    for(i=0; i<4; i++) {
+    for (i = 0; i < 4; i++) {
         uniqueTrackingTag += this._s4();
     }
 
     return uniqueTrackingTag;
-}
+};
 
 /*
 * Generates a short unique tracking tag.
@@ -552,23 +552,23 @@ KontagentApi.prototype.genUniqueTrackingTag = function() {
 *  @return {string} The short unique tracking tag
 */
 KontagentApi.prototype.genShortUniqueTrackingTag = function() {
-    var shortUniqueTrackingTag = "";
+    var shortUniqueTrackingTag = '';
 
-    for(i=0; i<2; i++) {
+    for (i = 0; i < 2; i++) {
         shortUniqueTrackingTag += this._s4();
     }
 
     return shortUniqueTrackingTag;
 
-}
+};
 
 /*
 * Sends an Invite Sent message to Kontagent.
 *
 * @param {int} userId The UID of the sending user
 * @param {string} recipientUserIds A comma-separated list of the recipient UIDs
-* @param {string} uniqueTrackingTag 32-digit hex string used to match 
-*   InviteSent->InviteResponse->ApplicationAdded messages. 
+* @param {string} uniqueTrackingTag 32-digit hex string used to match
+*   InviteSent->InviteResponse->ApplicationAdded messages.
 *   See the genUniqueTrackingTag() helper method.
 * @param {object} [optionalParams] An object containing paramName => value
 * @param {string} [optionalParams.subtype1] Subtype1 value (max 32 chars)
@@ -579,9 +579,9 @@ KontagentApi.prototype.genShortUniqueTrackingTag = function() {
 */
 KontagentApi.prototype.trackInviteSent = function(userId, recipientUserIds, uniqueTrackingTag, optionalParams, successCallback, validationErrorCallback) {
     var apiParams = {
-        s : userId,
-        r : recipientUserIds,
-        u : uniqueTrackingTag
+        s: userId,
+        r: recipientUserIds,
+        u: uniqueTrackingTag
     };
 
     if (optionalParams != null && typeof optionalParams != 'undefined') {
@@ -590,14 +590,14 @@ KontagentApi.prototype.trackInviteSent = function(userId, recipientUserIds, uniq
         if (optionalParams.subtype3) { apiParams.st3 = optionalParams.subtype3; }
     }
 
-    this._sendMessage("ins", apiParams, successCallback, validationErrorCallback);
-}
+    this._sendMessage('ins', apiParams, successCallback, validationErrorCallback);
+};
 
 /*
 * Sends an Invite Response message to Kontagent.
 *
-* @param {string} uniqueTrackingTag 32-digit hex string used to match 
-*   InviteSent->InviteResponse->ApplicationAdded messages. 
+* @param {string} uniqueTrackingTag 32-digit hex string used to match
+*   InviteSent->InviteResponse->ApplicationAdded messages.
 *   See the genUniqueTrackingTag() helper method.
 * @param {object} [optionalParams] An object containing paramName => value
 * @param {string} [optionalParams.recipientUserId] The UID of the responding user
@@ -609,8 +609,8 @@ KontagentApi.prototype.trackInviteSent = function(userId, recipientUserIds, uniq
 */
 KontagentApi.prototype.trackInviteResponse = function(uniqueTrackingTag, optionalParams, successCallback, validationErrorCallback) {
     var apiParams = {
-        i : 0,
-        u : uniqueTrackingTag
+        i: 0,
+        u: uniqueTrackingTag
     };
 
     if (optionalParams != null && typeof optionalParams != 'undefined') {
@@ -620,16 +620,16 @@ KontagentApi.prototype.trackInviteResponse = function(uniqueTrackingTag, optiona
         if (optionalParams.subtype3) { apiParams.st3 = optionalParams.subtype3; }
     }
 
-    this._sendMessage("inr", apiParams, successCallback, validationErrorCallback);
-}
+    this._sendMessage('inr', apiParams, successCallback, validationErrorCallback);
+};
 
 /*
 * Sends an Notification Sent message to Kontagent.
 *
 * @param {int} userId The UID of the sending user
 * @param {string} recipientUserIds A comma-separated list of the recipient UIDs
-* @param {string} uniqueTrackingTag 32-digit hex string used to match 
-*   NotificationSent->NotificationResponse->ApplicationAdded messages. 
+* @param {string} uniqueTrackingTag 32-digit hex string used to match
+*   NotificationSent->NotificationResponse->ApplicationAdded messages.
 *   See the genUniqueTrackingTag() helper method.
 * @param {object} [optionalParams] An object containing paramName => value
 * @param {string} [optionalParams.subtype1] Subtype1 value (max 32 chars)
@@ -640,9 +640,9 @@ KontagentApi.prototype.trackInviteResponse = function(uniqueTrackingTag, optiona
 */
 KontagentApi.prototype.trackNotificationSent = function(userId, recipientUserIds, uniqueTrackingTag, optionalParams, successCallback, validationErrorCallback) {
     var apiParams = {
-        s : userId,
-        r : recipientUserIds,
-        u : uniqueTrackingTag
+        s: userId,
+        r: recipientUserIds,
+        u: uniqueTrackingTag
     };
 
     if (optionalParams != null && typeof optionalParams != 'undefined') {
@@ -651,14 +651,14 @@ KontagentApi.prototype.trackNotificationSent = function(userId, recipientUserIds
         if (optionalParams.subtype3) { apiParams.st3 = optionalParams.subtype3; }
     }
 
-    this._sendMessage("nts", apiParams, successCalback, validationErrorCallback);
-}
+    this._sendMessage('nts', apiParams, successCalback, validationErrorCallback);
+};
 
 /*
 * Sends an Notification Response message to Kontagent.
 *
-* @param {string} uniqueTrackingTag 32-digit hex string used to match 
-*   NotificationSent->NotificationResponse->ApplicationAdded messages. 
+* @param {string} uniqueTrackingTag 32-digit hex string used to match
+*   NotificationSent->NotificationResponse->ApplicationAdded messages.
 *   See the genUniqueTrackingTag() helper method.
 * @param {object} [optionalParams] An object containing paramName => value
 * @param {string} [optionalParams.recipientUserId] The UID of the responding user
@@ -670,8 +670,8 @@ KontagentApi.prototype.trackNotificationSent = function(userId, recipientUserIds
 */
 KontagentApi.prototype.trackNotificationResponse = function(uniqueTrackingTag, optionalParams, successCallback, validationErrorCallback) {
     var apiParams = {
-        i : 0,
-        u : uniqueTrackingTag
+        i: 0,
+        u: uniqueTrackingTag
     };
 
     if (optionalParams != null && typeof optionalParams != 'undefined') {
@@ -681,16 +681,16 @@ KontagentApi.prototype.trackNotificationResponse = function(uniqueTrackingTag, o
         if (optionalParams.subtype3) { apiParams.st3 = optionalParams.subtype3; }
     }
 
-    this._sendMessage("ntr", apiParams, successCallback, validationErrorCallback);
-}
+    this._sendMessage('ntr', apiParams, successCallback, validationErrorCallback);
+};
 
 /*
 * Sends an Notification Email Sent message to Kontagent.
 *
 * @param {int} userId The UID of the sending user
 * @param {string} recipientUserIds A comma-separated list of the recipient UIDs
-* @param {string} uniqueTrackingTag 32-digit hex string used to match 
-*   NotificationEmailSent->NotificationEmailResponse->ApplicationAdded messages. 
+* @param {string} uniqueTrackingTag 32-digit hex string used to match
+*   NotificationEmailSent->NotificationEmailResponse->ApplicationAdded messages.
 *   See the genUniqueTrackingTag() helper method.
 * @param {object} [optionalParams] An object containing paramName => value
 * @param {string} [optionalParams.subtype1] Subtype1 value (max 32 chars)
@@ -701,9 +701,9 @@ KontagentApi.prototype.trackNotificationResponse = function(uniqueTrackingTag, o
 */
 KontagentApi.prototype.trackNotificationEmailSent = function(userId, recipientUserIds, uniqueTrackingTag, optionalParams, successCallback, validationErrorCallback) {
     var apiParams = {
-        s : userId,
-        r : recipientUserIds,
-        u : uniqueTrackingTag
+        s: userId,
+        r: recipientUserIds,
+        u: uniqueTrackingTag
     };
 
     if (optionalParams != null && typeof optionalParams != 'undefined') {
@@ -712,15 +712,15 @@ KontagentApi.prototype.trackNotificationEmailSent = function(userId, recipientUs
         if (optionalParams.subtype3) { apiParams.st3 = optionalParams.subtype3; }
     }
 
-    this._sendMessage("nes", apiParams, successCallback, validationErrorCallback);
-}
+    this._sendMessage('nes', apiParams, successCallback, validationErrorCallback);
+};
 
 /*
 * Sends an Notification Email Response message to Kontagent.
 *
 
-* @param {string} uniqueTrackingTag 32-digit hex string used to match 
-*   NotificationEmailSent->NotificationEmailResponse->ApplicationAdded messages. 
+* @param {string} uniqueTrackingTag 32-digit hex string used to match
+*   NotificationEmailSent->NotificationEmailResponse->ApplicationAdded messages.
 *   See the genUniqueTrackingTag() helper method.
 * @param {object} [optionalParams] An object containing paramName => value
 * @param {string} [optionalParams.recipientUserId] The UID of the responding user
@@ -732,8 +732,8 @@ KontagentApi.prototype.trackNotificationEmailSent = function(userId, recipientUs
 */
 KontagentApi.prototype.trackNotificationEmailResponse = function(uniqueTrackingTag, optionalParams, successCallback, validationErrorCallback) {
     var apiParams = {
-        i : 0,
-        u : uniqueTrackingTag
+        i: 0,
+        u: uniqueTrackingTag
     };
 
     if (optionalParams != null && typeof optionalParams != 'undefined') {
@@ -743,15 +743,15 @@ KontagentApi.prototype.trackNotificationEmailResponse = function(uniqueTrackingT
         if (optionalParams.subtype3) { apiParams.st3 = optionalParams.subtype3; }
     }
 
-    this._sendMessage("nei", apiParams, successCallback, validationErrorCallback);
-}
+    this._sendMessage('nei', apiParams, successCallback, validationErrorCallback);
+};
 
 /*
 * Sends an Stream Post message to Kontagent.
 *
 * @param {int} userId The UID of the sending user
-* @param {string} uniqueTrackingTag 32-digit hex string used to match 
-*   NotificationEmailSent->NotificationEmailResponse->ApplicationAdded messages. 
+* @param {string} uniqueTrackingTag 32-digit hex string used to match
+*   NotificationEmailSent->NotificationEmailResponse->ApplicationAdded messages.
 *   See the genUniqueTrackingTag() helper method.
 * @param {string} type The Facebook channel type
 *   (feedpub, stream, feedstory, multifeedstory, dashboard_activity, or dashboard_globalnews).
@@ -764,9 +764,9 @@ KontagentApi.prototype.trackNotificationEmailResponse = function(uniqueTrackingT
 */
 KontagentApi.prototype.trackStreamPost = function(userId, uniqueTrackingTag, type, optionalParams, successCallback, validationErrorCallback) {
     var apiParams = {
-        s : userId,
-        u : uniqueTrackingTag,
-        tu : type
+        s: userId,
+        u: uniqueTrackingTag,
+        tu: type
     };
 
     if (optionalParams != null && typeof optionalParams != 'undefined') {
@@ -775,14 +775,14 @@ KontagentApi.prototype.trackStreamPost = function(userId, uniqueTrackingTag, typ
         if (optionalParams.subtype3) { apiParams.st3 = optionalParams.subtype3; }
     }
 
-    this._sendMessage("pst", apiParams, successCallback, validationErrorCallback);
-}
+    this._sendMessage('pst', apiParams, successCallback, validationErrorCallback);
+};
 
 /*
 * Sends an Stream Post Response message to Kontagent.
 *
-* @param {string} uniqueTrackingTag 32-digit hex string used to match 
-*   NotificationEmailSent->NotificationEmailResponse->ApplicationAdded messages. 
+* @param {string} uniqueTrackingTag 32-digit hex string used to match
+*   NotificationEmailSent->NotificationEmailResponse->ApplicationAdded messages.
 *   See the genUniqueTrackingTag() helper method.
 * @param {string} type The Facebook channel type
 *   (feedpub, stream, feedstory, multifeedstory, dashboard_activity, or dashboard_globalnews).
@@ -796,9 +796,9 @@ KontagentApi.prototype.trackStreamPost = function(userId, uniqueTrackingTag, typ
 */
 KontagentApi.prototype.trackStreamPostResponse = function(uniqueTrackingTag, type, optionalParams, successCallback, validationErrorCallback) {
     var apiParams = {
-        i : 0,
-        u : uniqueTrackingTag,
-        tu : type
+        i: 0,
+        u: uniqueTrackingTag,
+        tu: type
     };
 
     if (optionalParams != null && typeof optionalParams != 'undefined') {
@@ -808,8 +808,8 @@ KontagentApi.prototype.trackStreamPostResponse = function(uniqueTrackingTag, typ
         if (optionalParams.subtype3) { apiParams.st3 = optionalParams.subtype3; }
     }
 
-    this._sendMessage("psr", apiParams, successCallback, validationErrorCallback);
-}
+    this._sendMessage('psr', apiParams, successCallback, validationErrorCallback);
+};
 
 /*
 * Sends an Custom Event message to Kontagent.
@@ -827,8 +827,8 @@ KontagentApi.prototype.trackStreamPostResponse = function(uniqueTrackingTag, typ
 */
 KontagentApi.prototype.trackEvent = function(userId, eventName, optionalParams, successCallback, validationErrorCallback) {
     var apiParams = {
-        s : userId,
-        n : eventName
+        s: userId,
+        n: eventName
     };
 
     if (optionalParams != null && typeof optionalParams != 'undefined') {
@@ -839,33 +839,33 @@ KontagentApi.prototype.trackEvent = function(userId, eventName, optionalParams, 
         if (optionalParams.subtype3) { apiParams.st3 = optionalParams.subtype3; }
     }
 
-    this._sendMessage("evt", apiParams, successCallback, validationErrorCallback);
-}
+    this._sendMessage('evt', apiParams, successCallback, validationErrorCallback);
+};
 
 /*
 * Sends an Application Added message to Kontagent.
 *
 * @param {int} userId The UID of the installing user
 * @param {object} [optionalParams] An object containing paramName => value
-* @param {string} [optionalParams.uniqueTrackingTag] 16-digit hex string used to match 
-*   Invite/StreamPost/NotificationSent/NotificationEmailSent->ApplicationAdded messages. 
+* @param {string} [optionalParams.uniqueTrackingTag] 16-digit hex string used to match
+*   Invite/StreamPost/NotificationSent/NotificationEmailSent->ApplicationAdded messages.
 *   See the genUniqueTrackingTag() helper method.
-* @param {string} [optionalParams.shortUniqueTrackingTag] 8-digit hex string used to match 
-*   ThirdPartyCommClicks->ApplicationAdded messages. 
+* @param {string} [optionalParams.shortUniqueTrackingTag] 8-digit hex string used to match
+*   ThirdPartyCommClicks->ApplicationAdded messages.
 *   See the genShortUniqueTrackingTag() hesendMessagelper method.
 * @param {function} [successCallback] The callback function to execute once message has been sent successfully
 * @param {function(error)} [validationErrorCallback] The callback function to execute on validation failure
 */
 KontagentApi.prototype.trackApplicationAdded = function(userId, optionalParams, successCallback, validationErrorCallback) {
-    var apiParams = {s : userId};
+    var apiParams = {s: userId};
 
     if (optionalParams != null && typeof optionalParams != 'undefined') {
         if (optionalParams.uniqueTrackingTag) { apiParams.u = optionalParams.uniqueTrackingTag; }
         if (optionalParams.shortUniqueTrackingTag) { apiParams.su = optionalParams.shortUniqueTrackingTag; }
     }
 
-    this._sendMessage("apa", apiParams, successCallback, validationErrorCallback);
-}
+    this._sendMessage('apa', apiParams, successCallback, validationErrorCallback);
+};
 
 /*
 * Sends an Application Removed message to Kontagent.
@@ -875,17 +875,17 @@ KontagentApi.prototype.trackApplicationAdded = function(userId, optionalParams, 
 * @param {function(error)} [validationErrorCallback] The callback function to execute on validation failure
 */
 KontagentApi.prototype.trackApplicationRemoved = function(userId, successCallback, validationErrorCallback) {
-    var apiParams = {s : userId};
+    var apiParams = {s: userId};
 
-    this._sendMessage("apr", apiParams, successCallback, validationErrorCallback);
-}
+    this._sendMessage('apr', apiParams, successCallback, validationErrorCallback);
+};
 
 /*
 * Sends an Third Party Communication Click message to Kontagent.
 *
 * @param {string} type The third party comm click type (ad, partner).
-* @param {string} shortUniqueTrackingTag 8-digit hex string used to match 
-*   ThirdPartyCommClicks->ApplicationAdded messages. 
+* @param {string} shortUniqueTrackingTag 8-digit hex string used to match
+*   ThirdPartyCommClicks->ApplicationAdded messages.
 * @param {object} [optionalParams] An object containing paramName => value
 * @param {string} [optionalParams.userId] The UID of the user
 * @param {string} [optionalParams.subtype1] Subtype1 value (max 32 chars)
@@ -896,9 +896,9 @@ KontagentApi.prototype.trackApplicationRemoved = function(userId, successCallbac
 */
 KontagentApi.prototype.trackThirdPartyCommClick = function(type, shortUniqueTrackingTag, optionalParams, successCallback, validationErrorCallback) {
     var apiParams = {
-        i : 0,
-        tu : type,
-        su : shortUniqueTrackingTag
+        i: 0,
+        tu: type,
+        su: shortUniqueTrackingTag
     };
 
     if (optionalParams != null && typeof optionalParams != 'undefined') {
@@ -908,8 +908,8 @@ KontagentApi.prototype.trackThirdPartyCommClick = function(type, shortUniqueTrac
         if (optionalParams.subtype3) { apiParams.st3 = optionalParams.subtype3; }
     }
 
-    this._sendMessage("ucc", apiParams, successCallback, validationErrorCallback);
-}
+    this._sendMessage('ucc', apiParams, successCallback, validationErrorCallback);
+};
 
 /*
 * Sends an Page Request message to Kontagent.
@@ -923,7 +923,7 @@ KontagentApi.prototype.trackThirdPartyCommClick = function(type, shortUniqueTrac
 */
 KontagentApi.prototype.trackPageRequest = function(userId, optionalParams, successCallback, validationErrorCallback) {
     var apiParams = {
-        s : userId
+        s: userId
     };
 
     if (optionalParams != null && typeof optionalParams != 'undefined') {
@@ -931,8 +931,8 @@ KontagentApi.prototype.trackPageRequest = function(userId, optionalParams, succe
         if (optionalParams.pageAddress) { apiParams.u = optionalParams.pageAddress; }
     }
 
-    this._sendMessage("pgr", apiParams, successCallback, validationErrorCallback);
-}
+    this._sendMessage('pgr', apiParams, successCallback, validationErrorCallback);
+};
 
 /*
 * Sends an User Information message to Kontagent.
@@ -946,8 +946,8 @@ KontagentApi.prototype.trackPageRequest = function(userId, optionalParams, succe
 * @param {function} [successCallback] The callback function to execute once message has been sent successfully
 * @param {function(error)} [validationErrorCallback] The callback function to execute on validation failure
 */
-KontagentApi.prototype.trackUserInformation = function (userId, optionalParams, successCallback, validationErrorCallback) {
-    var apiParams = {s : userId};
+KontagentApi.prototype.trackUserInformation = function(userId, optionalParams, successCallback, validationErrorCallback) {
+    var apiParams = {s: userId};
 
     if (optionalParams != null && typeof optionalParams != 'undefined') {
         if (optionalParams.birthYear) { apiParams.b = optionalParams.birthYear; }
@@ -956,8 +956,8 @@ KontagentApi.prototype.trackUserInformation = function (userId, optionalParams, 
         if (optionalParams.friendCount) { apiParams.f = optionalParams.friendCount; }
     }
 
-    this._sendMessage("cpu", apiParams, successCallback, validationErrorCallback);
-}
+    this._sendMessage('cpu', apiParams, successCallback, validationErrorCallback);
+};
 
 /*
 * Sends an Goal Count message to Kontagent.
@@ -972,7 +972,7 @@ KontagentApi.prototype.trackUserInformation = function (userId, optionalParams, 
 * @param {function(error)} [validationErrorCallback] The callback function to execute on validation failure
 */
 KontagentApi.prototype.trackGoalCount = function(userId, optionalParams, successCallback, validationErrorCallback) {
-    var apiParams = {s : userId};
+    var apiParams = {s: userId};
 
     if (optionalParams != null && typeof optionalParams != 'undefined') {
         if (optionalParams.goalCount1) { apiParams.gc1 = optionalParams.goalCount1; }
@@ -981,8 +981,8 @@ KontagentApi.prototype.trackGoalCount = function(userId, optionalParams, success
         if (optionalParams.goalCount4) { apiParams.gc4 = optionalParams.goalCount4; }
     }
 
-    this._sendMessage("gci", apiParams, successCallback, validationErrorCallback);
-}
+    this._sendMessage('gci', apiParams, successCallback, validationErrorCallback);
+};
 
 /*
 * Sends an Revenue message to Kontagent.
@@ -999,8 +999,8 @@ KontagentApi.prototype.trackGoalCount = function(userId, optionalParams, success
 */
 KontagentApi.prototype.trackRevenue = function(userId, value, optionalParams, successCallback, validationErrorCallback) {
     var apiParams = {
-        s : userId,
-        v : value
+        s: userId,
+        v: value
     };
 
     if (optionalParams != null && typeof optionalParams != 'undefined') {
@@ -1010,13 +1010,13 @@ KontagentApi.prototype.trackRevenue = function(userId, value, optionalParams, su
         if (optionalParams.subtype3) { apiParams.st3 = optionalParams.subtype3; }
     }
 
-    this._sendMessage("mtu", apiParams, successCallback, validationErrorCallback);
-}
+    this._sendMessage('mtu', apiParams, successCallback, validationErrorCallback);
+};
 
 ////////////////////////////////////////////////////////////////////////////////
 
 /*
-* Helper class to validate the paramters for the Kontagent API messages. All 
+* Helper class to validate the paramters for the Kontagent API messages. All
 *   methods are static so no need to instantiate this class.
 *
 * @constructor
@@ -1036,131 +1036,129 @@ function KtValidator() {
 */
 KtValidator.validateParameter = function(messageType, paramName, paramValue) {
     return KtValidator['_validate' + KtValidator._upperCaseFirst(paramName)](messageType, paramName, paramValue);
-}
+};
 
 KtValidator._upperCaseFirst = function(stringVal) {
     return stringVal.charAt(0).toUpperCase() + stringVal.slice(1);
-}
+};
 
 KtValidator._validateB = function(messageType, paramName, paramValue) {
     // birthyear param (cpu message)
-    if (typeof paramValue == "undefined" || paramValue != parseInt(paramValue) 
-        || paramValue < 1900 || paramValue > 2011
+    if (typeof paramValue == 'undefined' || paramValue != parseInt(paramValue) || paramValue < 1900 || paramValue > 2011
     ) {
         return 'Invalid birth year.';
     } else {
         return true;
     }
 
-}
+};
 
 KtValidator._validateF = function(messageType, paramName, paramValue) {
     // friend count param (cpu message)
-    if (typeof paramValue == "undefined" || paramValue != parseInt(paramValue) || paramValue < 0) {
-        return 'Invalid friend count.'
+    if (typeof paramValue == 'undefined' || paramValue != parseInt(paramValue) || paramValue < 0) {
+        return 'Invalid friend count.';
     } else {
         return true;
     }
-}
+};
 
-KtValidator._validateG = function(messageType, paramName, paramValue) {	
+KtValidator._validateG = function(messageType, paramName, paramValue) {
     // gender param (cpu message)
     var regex = /^[mfu]$/;
 
-    if (typeof paramValue == "undefined" || !regex.test(paramValue)) {
+    if (typeof paramValue == 'undefined' || !regex.test(paramValue)) {
         return 'Invalid gender.';
     } else {
         return true;
     }
-}
+};
 
 KtValidator._validateGc1 = function(messageType, paramName, paramValue) {
     // goal count param (gc1, gc2, gc3, gc4 messages)
-    if (typeof paramValue == "undefined" || paramValue != parseInt(paramValue) 
-        || paramValue < -16384 || paramValue > 16384
+    if (typeof paramValue == 'undefined' || paramValue != parseInt(paramValue) || paramValue < -16384 || paramValue > 16384
     ) {
         return 'Invalid goal count value.';
     } else {
         return true;
     }
-}
+};
 
 KtValidator._validateGc2 = function(messageType, paramName, paramValue) {
     return KtValidator._validateGc1(messageType, paramName, paramValue);
-}
+};
 
 KtValidator._validateGc3 = function(messageType, paramName, paramValue) {
     return KtValidator._validateGc1(messageType, paramName, paramValue);
-}
+};
 
 KtValidator._validateGc4 = function(messageType, paramName, paramValue) {
     return KtValidator._validateGc1(messageType, paramName, paramValue);
-}
+};
 
 KtValidator._validateI = function(messageType, paramName, paramValue) {
     // isAppInstalled param (inr, psr, ner, nei messages)
     var regex = /^[01]$/;
 
-    if (typeof paramValue == "undefined" || !regex.test(paramValue)) {
+    if (typeof paramValue == 'undefined' || !regex.test(paramValue)) {
         return 'Invalid isAppInstalled value.';
     } else {
         return true;
     }
-}
+};
 
 KtValidator._validateIp = function(messageType, paramName, paramValue) {
     // ip param (pgr messages)
-    var regex = /^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(\.\d{1,3})?$/; 
+    var regex = /^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(\.\d{1,3})?$/;
 
-    if (typeof paramValue == "undefined" || !regex.test(paramValue)) {
+    if (typeof paramValue == 'undefined' || !regex.test(paramValue)) {
         return 'Invalid IP address value.';
     } else {
         return true;
     }
-}
+};
 
 KtValidator._validateL = function(messageType, paramName, paramValue) {
     // level param (evt messages)
-    if (typeof paramValue == "undefined" || paramValue != parseInt(paramValue) || paramValue < 0) {
+    if (typeof paramValue == 'undefined' || paramValue != parseInt(paramValue) || paramValue < 0) {
         return 'Invalid level value.';
     } else {
         return true;
     }
-}
+};
 
 KtValidator._validateLc = function(messageType, paramName, paramValue) {
     // country param (cpu messages)
     var regex = /^[A-Z]{2}$/;
 
-    if (typeof paramValue == "undefined" || !regex.test(paramValue)) {
+    if (typeof paramValue == 'undefined' || !regex.test(paramValue)) {
         return 'Invalid country value.';
     } else {
         return true;
     }
-}
+};
 
 KtValidator._validateLp = function(messageType, paramName, paramValue) {
     // postal/zip code param (cpu messages)
     // this parameter isn't being used so we just return true for now
     return true;
-}
+};
 
 KtValidator._validateLs = function(messageType, paramName, paramValue) {
     // state param (cpu messages)
     // this parameter isn't being used so we just return true for now
     return true;
-}
+};
 
 KtValidator._validateN = function(messageType, paramName, paramValue) {
     // event name param (evt messages)
     var regex = /^[A-Za-z0-9-_]{1,32}$/;
 
-    if (typeof paramValue == "undefined" || !regex.test(paramValue)) {
+    if (typeof paramValue == 'undefined' || !regex.test(paramValue)) {
         return 'Invalid event name value.';
     } else {
         return true;
     }
-}
+};
 
 KtValidator._validateR = function(messageType, paramName, paramValue) {
     // Sending messages include multiple recipients (comma separated) and
@@ -1169,66 +1167,66 @@ KtValidator._validateR = function(messageType, paramName, paramValue) {
         // recipients param (ins, nes, nts messages)
         var regex = /^[0-9]+(,[0-9]+)*$/;
 
-        if (typeof paramValue == "undefined" || !regex.test(paramValue)) {
+        if (typeof paramValue == 'undefined' || !regex.test(paramValue)) {
             return 'Invalid recipient user ids.';
         }
     } else if (messageType == 'inr' || messageType == 'psr' || messageType == 'nei' || messageType == 'ntr') {
         // recipient param (inr, psr, nei, ntr messages)
-        if (typeof paramValue == "undefined" || paramValue != parseInt(paramValue)) {
+        if (typeof paramValue == 'undefined' || paramValue != parseInt(paramValue)) {
             return 'Invalid recipient user id.';
         }
     }
 
     return true;
-}
+};
 
 KtValidator._validateS = function(messageType, paramName, paramValue) {
     // userId param
-    if (typeof paramValue == "undefined" || paramValue != parseInt(paramValue)) {
+    if (typeof paramValue == 'undefined' || paramValue != parseInt(paramValue)) {
         return 'Invalid user id.';
     } else {
         return true;
     }
-}
+};
 
 KtValidator._validateSt1 = function(messageType, paramName, paramValue) {
     // subtype1 param
     var regex = /^[A-Za-z0-9-_]{1,32}$/;
 
-    if (typeof paramValue == "undefined" || !regex.test(paramValue)) {
+    if (typeof paramValue == 'undefined' || !regex.test(paramValue)) {
         return 'Invalid subtype value.';
     } else {
         return true;
     }
-}
+};
 
 KtValidator._validateSt2 = function(messageType, paramName, paramValue) {
     return KtValidator._validateSt1(messageType, paramName, paramValue);
-}
+};
 
 KtValidator._validateSt3 = function(messageType, paramName, paramValue) {
     return KtValidator._validateSt1(messageType, paramName, paramValue);
-}
+};
 
 KtValidator._validateSu = function(messageType, paramName, paramValue) {
     // short tracking tag param
     var regex = /^[A-Fa-f0-9]{8}$/;
 
-    if (typeof paramValue == "undefined" || !regex.test(paramValue)) {
+    if (typeof paramValue == 'undefined' || !regex.test(paramValue)) {
         return 'Invalid short unique tracking tag.';
     } else {
         return true;
     }
-}
+};
 
 KtValidator._validateTs = function(messageType, paramName, paramValue) {
     // timestamp param (pgr message)
-    if (typeof paramValue == "undefined" || paramValue != parseInt(paramValue)) {
+    if (typeof paramValue == 'undefined' || paramValue != parseInt(paramValue)) {
         return 'Invalid timestamp.';
     } else {
         return true;
     }
-}
+};
 
 KtValidator._validateTu = function(messageType, paramName, paramValue) {
     // type parameter (mtu, pst/psr, ucc messages)
@@ -1238,25 +1236,25 @@ KtValidator._validateTu = function(messageType, paramName, paramValue) {
     if (messageType == 'mtu') {
         regex = /^(direct|indirect|advertisement|credits|other)$/;
 
-        if (typeof paramValue == "undefined" || !regex.test(paramValue)) {
+        if (typeof paramValue == 'undefined' || !regex.test(paramValue)) {
             return 'Invalid monetization type.';
         }
     } else if (messageType == 'pst' || messageType == 'psr') {
         regex = /^(feedpub|stream|feedstory|multifeedstory|dashboard_activity|dashboard_globalnews)$/;
 
-        if (typeof paramValue == "undefined" || !regex.test(paramValue)) {
+        if (typeof paramValue == 'undefined' || !regex.test(paramValue)) {
             return 'Invalid stream post/response type.';
         }
     } else if (messageType == 'ucc') {
         regex = /^(ad|partner)$/;
 
-        if (typeof paramValue == "undefined" || !regex.test(paramValue)) {
+        if (typeof paramValue == 'undefined' || !regex.test(paramValue)) {
             return 'Invalid third party communication click type.';
         }
     }
 
     return true;
-}
+};
 
 KtValidator._validateU = function(messageType, paramName, paramValue) {
     // unique tracking tag parameter for all messages EXCEPT pgr.
@@ -1264,22 +1262,22 @@ KtValidator._validateU = function(messageType, paramName, paramValue) {
     if (messageType != 'pgr') {
         var regex = /^[A-Fa-f0-9]{16}$/;
 
-        if (typeof paramValue == "undefined" || !regex.test(paramValue)) {
+        if (typeof paramValue == 'undefined' || !regex.test(paramValue)) {
             return 'Invalid unique tracking tag.';
         }
     }
 
     return true;
-}
+};
 
 KtValidator._validateV = function(messageType, paramName, paramValue) {
     // value param (mtu, evt messages)
-    if (typeof paramValue == "undefined" || paramValue != parseInt(paramValue)) {
+    if (typeof paramValue == 'undefined' || paramValue != parseInt(paramValue)) {
         return 'Invalid value.';
     } else {
         return true;
     }
-}
+};
 
 if (window.fbAsyncInit) {
     BASE_FB.callback = window.fbAsyncInit;

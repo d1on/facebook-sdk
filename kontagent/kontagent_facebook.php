@@ -627,8 +627,10 @@ class KontagentFacebook extends Facebook
 }
 
 ////////////////////////////////////////////////////////////////////////////////	
-	
+
 class KontagentApi {
+	private $sdkVersion = "fp00";
+
 	private $baseApiUrl = "http://api.geo.kontagent.net/api/v1/";
 	private $baseTestServerUrl = "http://test-server.kontagent.com/api/v1/";
 	
@@ -685,6 +687,9 @@ class KontagentApi {
 	* @return bool Returns false on validation failure, true otherwise
 	*/
 	public function sendMessage($messageType, $params, &$validationErrorMsg = null) {
+		// append the version
+		$params['sdk'] = $this->sdkVersion;
+
 		if ($this->validateParams) {
 			// validate the message parameters
 			$validationErrorMsg = null;
@@ -740,6 +745,7 @@ class KontagentApi {
 	* @param string $optionalParams['subtype1'] Subtype1 value (max 32 chars)
 	* @param string $optionalParams['subtype2'] Subtype2 value (max 32 chars)
 	* @param string $optionalParams['subtype3'] Subtype3 value (max 32 chars)
+	* @param string $optionalParams['data'] Additional JSON-formatted data to associate with the message
 	* @param string $validationErrorMsg The error message on validation failure
 	* 
 	* @return bool Returns false on validation failure, true otherwise
@@ -754,6 +760,7 @@ class KontagentApi {
 		if (isset($optionalParams['subtype1'])) { $params['st1'] = $optionalParams['subtype1']; }
 		if (isset($optionalParams['subtype2'])) { $params['st2'] = $optionalParams['subtype2']; }
 		if (isset($optionalParams['subtype3'])) { $params['st3'] = $optionalParams['subtype3']; }
+		if (isset($optionalParams['data'])) { $params['data'] = base64_encode($optionalParams['data']); }
 			
 		return $this->sendMessage("ins", $params, $validationErrorMsg);
 	}
@@ -769,6 +776,7 @@ class KontagentApi {
 	* @param string $optionalParams['subtype1'] Subtype1 value (max 32 chars)
 	* @param string $optionalParams['subtype2'] Subtype2 value (max 32 chars)
 	* @param string $optionalParams['subtype3'] Subtype3 value (max 32 chars)
+	* @param string $optionalParams['data'] Additional JSON-formatted data to associate with the message
 	* @param string $validationErrorMsg The error message on validation failure
 	* 
 	* @return bool Returns false on validation failure, true otherwise
@@ -783,6 +791,7 @@ class KontagentApi {
 		if (isset($optionalParams['subtype1'])) { $params['st1'] = $optionalParams['subtype1']; }
 		if (isset($optionalParams['subtype2'])) { $params['st2'] = $optionalParams['subtype2']; }
 		if (isset($optionalParams['subtype3'])) { $params['st3'] = $optionalParams['subtype3']; }
+		if (isset($optionalParams['data'])) { $params['data'] = base64_encode($optionalParams['data']); }
 	
 		return $this->sendMessage("inr", $params, $validationErrorMsg);
 	}
@@ -799,6 +808,7 @@ class KontagentApi {
 	* @param string $optionalParams['subtype1'] Subtype1 value (max 32 chars)
 	* @param string $optionalParams['subtype2'] Subtype2 value (max 32 chars)
 	* @param string $optionalParams['subtype3'] Subtype3 value (max 32 chars)
+	* @param string $optionalParams['data'] Additional JSON-formatted data to associate with the message
 	* @param string $validationErrorMsg The error message on validation failure
 	* 
 	* @return bool Returns false on validation failure, true otherwise
@@ -813,6 +823,7 @@ class KontagentApi {
 		if (isset($optionalParams['subtype1'])) { $params['st1'] = $optionalParams['subtype1']; }
 		if (isset($optionalParams['subtype2'])) { $params['st2'] = $optionalParams['subtype2']; }
 		if (isset($optionalParams['subtype3'])) { $params['st3'] = $optionalParams['subtype3']; }
+		if (isset($optionalParams['data'])) { $params['data'] = base64_encode($optionalParams['data']); }
 		
 		return $this->sendMessage("nts", $params, $validationErrorMsg);
 	}
@@ -828,6 +839,7 @@ class KontagentApi {
 	* @param string $optionalParams['subtype1'] Subtype1 value (max 32 chars)
 	* @param string $optionalParams['subtype2'] Subtype2 value (max 32 chars)
 	* @param string $optionalParams['subtype3'] Subtype3 value (max 32 chars)
+	* @param string $optionalParams['data'] Additional JSON-formatted data to associate with the message
 	* @param string $validationErrorMsg The error message on validation failure
 	* 
 	* @return bool Returns false on validation failure, true otherwise
@@ -842,6 +854,7 @@ class KontagentApi {
 		if (isset($optionalParams['subtype1'])) { $params['st1'] = $optionalParams['subtype1']; }
 		if (isset($optionalParams['subtype2'])) { $params['st2'] = $optionalParams['subtype2']; }
 		if (isset($optionalParams['subtype3'])) { $params['st3'] = $optionalParams['subtype3']; }
+		if (isset($optionalParams['data'])) { $params['data'] = base64_encode($optionalParams['data']); }
 	
 		return $this->sendMessage("ntr", $params, $validationErrorMsg);
 	}
@@ -858,6 +871,7 @@ class KontagentApi {
 	* @param string $optionalParams['subtype1'] Subtype1 value (max 32 chars)
 	* @param string $optionalParams['subtype2'] Subtype2 value (max 32 chars)
 	* @param string $optionalParams['subtype3'] Subtype3 value (max 32 chars)
+	* @param string $optionalParams['data'] Additional JSON-formatted data to associate with the message
 	* @param string $validationErrorMsg The error message on validation failure
 	* 
 	* @return bool Returns false on validation failure, true otherwise
@@ -872,6 +886,7 @@ class KontagentApi {
 		if (isset($optionalParams['subtype1'])) { $params['st1'] = $optionalParams['subtype1']; }
 		if (isset($optionalParams['subtype2'])) { $params['st2'] = $optionalParams['subtype2']; }
 		if (isset($optionalParams['subtype3'])) { $params['st3'] = $optionalParams['subtype3']; }
+		if (isset($optionalParams['data'])) { $params['data'] = base64_encode($optionalParams['data']); }
 	
 		return $this->sendMessage("nes", $params, $validationErrorMsg);
 	}
@@ -887,6 +902,7 @@ class KontagentApi {
 	* @param string $optionalParams['subtype1'] Subtype1 value (max 32 chars)
 	* @param string $optionalParams['subtype2'] Subtype2 value (max 32 chars)
 	* @param string $optionalParams['subtype3'] Subtype3 value (max 32 chars)
+	* @param string $optionalParams['data'] Additional JSON-formatted data to associate with the message
 	* @param string $validationErrorMsg The error message on validation failure
 	* 
 	* @return bool Returns false on validation failure, true otherwise
@@ -901,6 +917,7 @@ class KontagentApi {
 		if (isset($optionalParams['subtype1'])) { $params['st1'] = $optionalParams['subtype1']; }	
 		if (isset($optionalParams['subtype2'])) { $params['st2'] = $optionalParams['subtype2']; }
 		if (isset($optionalParams['subtype3'])) { $params['st3'] = $optionalParams['subtype3']; }
+		if (isset($optionalParams['data'])) { $params['data'] = base64_encode($optionalParams['data']); }
 	
 		return $this->sendMessage("nei", $params, $validationErrorMsg);
 	}
@@ -918,6 +935,7 @@ class KontagentApi {
 	* @param string $optionalParams['subtype1'] Subtype1 value (max 32 chars)
 	* @param string $optionalParams['subtype2'] Subtype2 value (max 32 chars)
 	* @param string $optionalParams['subtype3'] Subtype3 value (max 32 chars)
+	* @param string $optionalParams['data'] Additional JSON-formatted data to associate with the message
 	* @param string $validationErrorMsg The error message on validation failure
 	* 
 	* @return bool Returns false on validation failure, true otherwise
@@ -932,6 +950,7 @@ class KontagentApi {
 		if (isset($optionalParams['subtype1'])) { $params['st1'] = $optionalParams['subtype1']; }
 		if (isset($optionalParams['subtype2'])) { $params['st2'] = $optionalParams['subtype2']; }
 		if (isset($optionalParams['subtype3'])) { $params['st3'] = $optionalParams['subtype3']; }
+		if (isset($optionalParams['data'])) { $params['data'] = base64_encode($optionalParams['data']); }
 		
 		return $this->sendMessage("pst", $params, $validationErrorMsg);
 	}
@@ -949,6 +968,7 @@ class KontagentApi {
 	* @param string $optionalParams['subtype1'] Subtype1 value (max 32 chars)
 	* @param string $optionalParams['subtype2'] Subtype2 value (max 32 chars)
 	* @param string $optionalParams['subtype3'] Subtype3 value (max 32 chars)
+	* @param string $optionalParams['data'] Additional JSON-formatted data to associate with the message
 	* @param string $validationErrorMsg The error message on validation failure
 	* 
 	* @return bool Returns false on validation failure, true otherwise
@@ -964,6 +984,7 @@ class KontagentApi {
 		if (isset($optionalParams['subtype1'])) { $params['st1'] = $optionalParams['subtype1']; }
 		if (isset($optionalParams['subtype2'])) { $params['st2'] = $optionalParams['subtype2']; }
 		if (isset($optionalParams['subtype3'])) { $params['st3'] = $optionalParams['subtype3']; }
+		if (isset($optionalParams['data'])) { $params['data'] = base64_encode($optionalParams['data']); }
 	
 		return $this->sendMessage("psr", $params, $validationErrorMsg);
 	}
@@ -979,6 +1000,7 @@ class KontagentApi {
 	* @param string $optionalParams['subtype1'] Subtype1 value (max 32 chars)
 	* @param string $optionalParams['subtype2'] Subtype2 value (max 32 chars)
 	* @param string $optionalParams['subtype3'] Subtype3 value (max 32 chars)
+	* @param string $optionalParams['data'] Additional JSON-formatted data to associate with the message
 	* @param string $validationErrorMsg The error message on validation failure
 	* 
 	* @return bool Returns false on validation failure, true otherwise
@@ -994,6 +1016,7 @@ class KontagentApi {
 		if (isset($optionalParams['subtype1'])) { $params['st1'] = $optionalParams['subtype1']; }
 		if (isset($optionalParams['subtype2'])) { $params['st2'] = $optionalParams['subtype2']; }
 		if (isset($optionalParams['subtype3'])) { $params['st3'] = $optionalParams['subtype3']; }
+		if (isset($optionalParams['data'])) { $params['data'] = base64_encode($optionalParams['data']); }
 	
 		return $this->sendMessage("evt", $params, $validationErrorMsg);
 	}
@@ -1009,6 +1032,7 @@ class KontagentApi {
 	* @param string $optionalParams['shortUniqueTrackingTag'] 8-digit hex string used to match 
 	*	ThirdPartyCommClicks->ApplicationAdded messages. 
 	*	See the genShortUniqueTrackingTag() helper method.
+	* @param string $optionalParams['data'] Additional JSON-formatted data to associate with the message
 	* @param string $validationErrorMsg The error message on validation failure
 	* 
 	* @return bool Returns false on validation failure, true otherwise
@@ -1018,6 +1042,7 @@ class KontagentApi {
 		
 		if (isset($optionalParams['uniqueTrackingTag'])) { $params['u'] = $optionalParams['uniqueTrackingTag']; }
 		if (isset($optionalParams['shortUniqueTrackingTag'])) { $params['su'] = $optionalParams['shortUniqueTrackingTag']; }
+		if (isset($optionalParams['data'])) { $params['data'] = base64_encode($optionalParams['data']); }
 	
 		return $this->sendMessage("apa", $params, $validationErrorMsg);
 	}
@@ -1026,12 +1051,16 @@ class KontagentApi {
 	* Sends an Application Removed message to Kontagent.
 	*
 	* @param int $userId The UID of the removing user
+	* @param array $optionalParams An associative array containing paramName => value
+    	* @param string $optionalParams['data'] Additional JSON-formatted data to associate with the message
 	* @param string $validationErrorMsg The error message on validation failure
 	* 
 	* @return bool Returns false on validation failure, true otherwise
 	*/
-	public function trackApplicationRemoved($userId, &$validationErrorMsg = null) {
+	public function trackApplicationRemoved($userId, $optionalParams = array(), &$validationErrorMsg = null) {
 		$params = array('s' => $userId);
+
+		if (isset($optionalParams['data'])) { $params['data'] = base64_encode($optionalParams['data']); }
 	
 		return $this->sendMessage("apr", $params, $validationErrorMsg);
 	}
@@ -1047,6 +1076,7 @@ class KontagentApi {
 	* @param string $optionalParams['subtype1'] Subtype1 value (max 32 chars)
 	* @param string $optionalParams['subtype2'] Subtype2 value (max 32 chars)
 	* @param string $optionalParams['subtype3'] Subtype3 value (max 32 chars)
+	* @param string $optionalParams['data'] Additional JSON-formatted data to associate with the message
 	* @param string $validationErrorMsg The error message on validation failure
 	* 
 	* @return bool Returns false on validation failure, true otherwise
@@ -1062,6 +1092,7 @@ class KontagentApi {
 		if (isset($optionalParams['subtype1'])) { $params['st1'] = $optionalParams['subtype1']; }
 		if (isset($optionalParams['subtype2'])) { $params['st2'] = $optionalParams['subtype2']; }
 		if (isset($optionalParams['subtype3'])) { $params['st3'] = $optionalParams['subtype3']; }	
+		if (isset($optionalParams['data'])) { $params['data'] = base64_encode($optionalParams['data']); }
 	
 		return $this->sendMessage("ucc", $params, $validationErrorMsg);
 	}
@@ -1073,6 +1104,7 @@ class KontagentApi {
 	* @param array $optionalParams An associative array containing paramName => value
 	* @param int $optionalParams['ipAddress'] The current users IP address
 	* @param string $optionalParams['pageAddress'] The current page address (ex: index.html)
+	* @param string $optionalParams['data'] Additional JSON-formatted data to associate with the message
 	* @param string $validationErrorMsg The error message on validation failure
 	* 
 	* @return bool Returns false on validation failure, true otherwise
@@ -1085,6 +1117,7 @@ class KontagentApi {
 		
 		if (isset($optionalParams['ipAddress'])) { $params['ip'] = $optionalParams['ipAddress']; }
 		if (isset($optionalParams['pageAddress'])) { $params['u'] = $optionalParams['pageAddress']; }
+		if (isset($optionalParams['data'])) { $params['data'] = base64_encode($optionalParams['data']); }
 	
 		return $this->sendMessage("pgr", $params, $validationErrorMsg);
 	}
@@ -1098,6 +1131,7 @@ class KontagentApi {
 	* @param string $optionalParams['gender'] The gender of the user (m,f,u)
 	* @param string $optionalParams['country'] The 2-character country code of the user
 	* @param int $optionalParams['friendCount'] The friend count of the user
+	* @param string $optionalParams['data'] Additional JSON-formatted data to associate with the message
 	* @param string $validationErrorMsg The error message on validation failure
 	* 
 	* @return bool Returns false on validation failure, true otherwise
@@ -1109,6 +1143,7 @@ class KontagentApi {
 		if (isset($optionalParams['gender'])) { $params['g'] = $optionalParams['gender']; }
 		if (isset($optionalParams['country'])) { $params['lc'] = strtoupper($optionalParams['country']); }
 		if (isset($optionalParams['friendCount'])) { $params['f'] = $optionalParams['friendCount']; }
+		if (isset($optionalParams['data'])) { $params['data'] = base64_encode($optionalParams['data']); }
 
 		return $this->sendMessage("cpu", $params, $validationErrorMsg);
 	}
@@ -1122,6 +1157,7 @@ class KontagentApi {
 	* @param int $optionalParams['goalCount2'] The amount to increment goal count 2 by
 	* @param int $optionalParams['goalCount3'] The amount to increment goal count 3 by
 	* @param int $optionalParams['goalCount4'] The amount to increment goal count 4 by
+	* @param string $optionalParams['data'] Additional JSON-formatted data to associate with the message
 	* @param string $validationErrorMsg The error message on validation failure
 	* 
 	* @return bool Returns false on validation failure, true otherwise
@@ -1133,6 +1169,7 @@ class KontagentApi {
 		if (isset($optionalParams['goalCount2'])) { $params['gc2'] = $optionalParams['goalCount2']; }
 		if (isset($optionalParams['goalCount3'])) { $params['gc3'] = $optionalParams['goalCount3']; }
 		if (isset($optionalParams['goalCount4'])) { $params['gc4'] = $optionalParams['goalCount4']; }
+		if (isset($optionalParams['data'])) { $params['data'] = base64_encode($optionalParams['data']); }
 	
 		return $this->sendMessage("gci", $params, $validationErrorMsg);
 	}
@@ -1147,6 +1184,7 @@ class KontagentApi {
 	* @param string $optionalParams['subtype1'] Subtype1 value (max 32 chars)
 	* @param string $optionalParams['subtype2'] Subtype2 value (max 32 chars)
 	* @param string $optionalParams['subtype3'] Subtype3 value (max 32 chars)
+	* @param string $optionalParams['data'] Additional JSON-formatted data to associate with the message
 	* @param string $validationErrorMsg The error message on validation failure
 	* 
 	* @return bool Returns false on validation failure, true otherwise
@@ -1161,10 +1199,10 @@ class KontagentApi {
 		if (isset($optionalParams['subtype1'])) { $params['st1'] = $optionalParams['subtype1']; }
 		if (isset($optionalParams['subtype2'])) { $params['st2'] = $optionalParams['subtype2']; }
 		if (isset($optionalParams['subtype3'])) { $params['st3'] = $optionalParams['subtype3']; }
+		if (isset($optionalParams['data'])) { $params['data'] = base64_encode($optionalParams['data']); }
 	
 		return $this->sendMessage("mtu", $params, $validationErrorMsg);
 	}
-
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -1205,6 +1243,11 @@ class KtValidator
 			return true;
 		}
 	}
+
+	private static function validateData($messageType, $paramValue, &$validationErrorMsg = null) {
+		return true;
+	}
+	
 	
 	private static function validateF($messageType, $paramValue, &$validationErrorMsg = null) {
 		// friend count param (cpu message)
@@ -1339,6 +1382,10 @@ class KtValidator
 			return true;
 		}
 	}
+
+	private static function validateSdk($messageType, $paramValue, &$validationErrorMsg = null) {
+		return true;
+	}
 	
 	private static function validateSt1($messageType, $paramValue, &$validationErrorMsg = null) {
 		// subtype1 param
@@ -1425,3 +1472,4 @@ class KtValidator
 	}
 }
 ?>
+
